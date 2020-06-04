@@ -6,9 +6,9 @@
 <body>
 <ul class = "navbar">
 <li class = "navelement"><a class = "navlink" href = index.php>Home</a></li>
-<li class = "navelement"><a class = "navlink" href = CSCI297/index.html>Dev Blog</a></li>
-<li class = "navelement"><a class = "navlink" href = CSCI432/>Blog</a></li>
-<li class = "navelement"><a class = "navlink" href = CSCI440/index.html>About Me</a></li>
+<li class = "navelement"><a class = "navlink" href = aboutMe.html>About Me</a></li>
+<li class = "navelement"><a class = "navlink" href = devBlog.html>Dev Blog</a></li>
+<li class = "navelement"><a class = "navlink" href = showcase.html>Showcase</a></li>
 <li class = "navelement"><a class = "navlink" href = contact.html>Contact</a></li>
 </ul>
 
