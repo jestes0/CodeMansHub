@@ -9,7 +9,7 @@
 <!-- -->
   <?php
   include 'nav.php'; //Include the navigation bar from the nav.php file.
-  ?>
+  ?>:
 
   <!--Main Page Conents-->
 
