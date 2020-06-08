@@ -13,10 +13,10 @@
 
   <!--Main Page Conents-->
 
-<p> Thank you for visiting my website. I have graduated as of May 9, 2020.
+<h3>Development Updates</h3>
 <br>
-<p>Please use the Navigation Bar above to select my featured work from my classes.
 
+<embed src="updates.txt" width = "80%">
 
 </body>
 </html>
