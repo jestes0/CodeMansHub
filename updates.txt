@@ -1,15 +1,15 @@
-Development Update: Week of 6/8 to 6/12
+<h4>Week of 6/8 to 6/12</h4>
 
-Hello, and I hope everyone has had a great weekend. The weather was fairly nice for me, so I hope yours was as well.
+<p>Hello, and I hope everyone has had a great weekend. The weather was fairly nice for me, so I hope yours was as well.
 
-As for me, I have been able to start coding on my own fully functional website.
+<p>As for me, I have been able to start coding on my own fully functional website.
 
-The following is the work I have done as of last week:
+<p>The following is the work I have done as of last week:
   -Started the basic Structure of Codeman's Hub.
   -Make all five relevant website files (for each page).
   -Design a Navbar that is compatible to mobile devices.
 
-As for the next steps for this week, my goals are as follows:
+<p>As for the next steps for this week, my goals are as follows:
   -Finish the form for the contact page.
   -Use PHP processing to submit the form securely.
   -Start design on the About Me Page.
