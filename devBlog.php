@@ -16,7 +16,13 @@
 <h3>Development Updates</h3>
 <br>
 
-<embed src="updates.txt" width = "80%">
+<div>
+  <p>
+  <?php
+    include('updates.txt');
+  ?>
+  </p>
+</div>
 
 </body>
 </html>
