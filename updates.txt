@@ -1,3 +1,25 @@
+<h4>Week of 6/15 to 6/19</h4>
+
+<p>Another glorious week for everyone I would hope! I have caught up on some shows myself.
+
+The following progress is of up to today's date 6/17:
+<ul>
+  <li>Finished Basic Form</li>
+  <li>Finished Email processing using PHP</li>
+  <li>Slightly altered the title</li>
+  <li>Fixed the design of the updates page so bullets work properly</li>
+</ul>
+
+Now for the rest of this week, I plan to:
+<ul>
+  <li>Continue work on general main page design</li>
+  <li>Try to add all information to the About Me page before formatting.</li>
+  <li>Continue to fix general formatting issues</li>
+  <li>Address bug fixes.</li>
+</ul>
+
+As usual, I hope you have an excellent week!
+
 <h4>Week of 6/8 to 6/12</h4>
 
 <p>Hello, and I hope everyone has had a great weekend. The weather was fairly nice for me, so I hope yours was as well.
@@ -5,14 +27,19 @@
 <p>As for me, I have been able to start coding on my own fully functional website.
 
 <p>The following is the work I have done as of last week:
-  -Started the basic Structure of Codeman's Hub.
-  -Make all five relevant website files (for each page).
-  -Design a Navbar that is compatible to mobile devices.
+<ul>
+  <li>Started the basic Structure of Codeman's Hub</li>
+  <li>Make all five relevant website files (for each page)</li>
+  <li>Design a Navbar that is compatible to mobile devices</li>
+</ul>
 
 <p>As for the next steps for this week, my goals are as follows:
-  -Finish the form for the contact page.
-  -Use PHP processing to submit the form securely.
-  -Start design on the About Me Page.
-  -Work on structural designs for the homepage.
+<ul>
+  <li>Finish the form for the contact page</li>
+  <li>Use PHP processing to submit the form securely</li>
+  <li>Start design on the About Me Page</li>
+  <li>Work on structural designs for the homepage</li>
+</ul>
 
-I hope you have a wonderful week of coding and fun!
+
+<h5>I hope you have a wonderful week of coding and fun!</h5>
