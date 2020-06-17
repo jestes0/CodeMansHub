@@ -52,7 +52,12 @@ if ($error != 0) {
 
 
 else {
-  echo "Form information ahs been validated sucessfully.";
+  echo "Submitting Email...";
 }
 
+$to = "jestes29706@gmail.com";
+$subject = "Website Response from User." + $Name;
+$msg = $Message;
+
+mail($to,$subject,$msg);
 ?>

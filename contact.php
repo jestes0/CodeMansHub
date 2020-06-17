@@ -16,7 +16,18 @@
 <h3>Would you like to reach out to me?</h3>
 <p>No problem! Just fill out the form below and I will get back to you within 24 hours.
 
-<form>
+<style>
+
+input[type=text]:focus {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 2px solid #333;
+  box-sizing: border-box;
+}
+</style>
+
+<form action = "emailprocessing.php" method="POST">
   <label for="Name">Name:</label><br>
   <input type="text" id="Name" name="Name"><br>
   <label for="Email">Email:</label><br>
@@ -28,7 +39,7 @@
   <input type="submit" value="Submit">
 </form>
 
-<p>Form is a work in progress. This feature is being worked on (See DevBlog!).
+<p>Please Submit the form using the button above. I hope to speak with you soon!
 
 </body>
 </html>
