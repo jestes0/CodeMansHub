@@ -1,8 +1,13 @@
 <!--
 Load an icon library to show a hamburger menu (bars) on small screens-->
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <nav>
-<div class="topnav" id="myTopnav" align="center">
+  <div>
+     <img src="https://i.imgur.com/CnqvXCK.png" alt="Computer Man" style="width:300px;height:55px; float:left;">
+  </div>
+<div class="topnav" id="customNav" align="right">
+
  <a href="index.php" class="active">Home</a>
  <a href="aboutMe.php">About</a>
  <a href="devBlog.php">Development Blog</a>
@@ -17,17 +22,19 @@ Load an icon library to show a hamburger menu (bars) on small screens-->
 <style>
 /* Add a black background color to the top navigation */
 .topnav {
+  float: left;
  background-color: #222;
  overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
+ align: left;
  float: left;
  display: block;
  color: #f2f2f2;
- text-align: center;
- padding: 14px 40px;
+ text-align: left;
+ padding: 15px 56px;
  text-decoration: none;
  font-size: 17px;
 }
@@ -66,11 +73,15 @@ Load an icon library to show a hamburger menu (bars) on small screens-->
    right: 0;
    top: 0;
  }
+}
  .topnav.responsive a {
-   float: none;
+   float: center;
    display: block;
    text-align: center;
  }
+
+body {
+background-image: url('https://blog.hostbaby.com/wp-content/uploads/2014/03/PaintSwatches_1920x1234.jpg');
 }
 
 </style>

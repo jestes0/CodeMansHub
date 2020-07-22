@@ -10,6 +10,7 @@
   <?php
   include 'nav.php'; //Include the navigation bar from the nav.php file.
   ?>
+<br><br><br><br><br><br><br>
 
   <!--Main Page Conents-->
 
