@@ -1,3 +1,27 @@
+<h4>Week of 7/20 to 7/24</h4>
+
+<p>It has been a while since I did a proper dev update, so here it is.
+
+The following progress is of up to today's date as of 7/20-7/22:
+<ul>
+  <li>Created the CodeMan Logo</li>
+  <li>Adjusted the Logo so it adjusts with navbar</li>
+  <li>Adjusted main page font</li>
+  <li>Added Background</li>
+  <li>Fixed From page to reduce the size of the text bar</li>
+</ul>
+
+And a lot more to come, but the main focuses for the website are:
+<ul>
+  <li>Create custom images for headers of pages</li>
+  <li>finish About Me design.</li>
+  <li>Fix Navbar issues</li>
+  <li>Address other bug fixes.</li>
+</ul>
+
+As usual, I hope you have an excellent week!
+
+
 <h4>Week of 6/15 to 6/19</h4>
 
 <p>Another glorious week for everyone I would hope! I have caught up on some shows myself.
