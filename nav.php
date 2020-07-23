@@ -1,99 +1,90 @@
+<html>
+<header>
 <!--
 Load an icon library to show a hamburger menu (bars) on small screens-->
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<nav>
-  <div>
-     <img src="https://i.imgur.com/CnqvXCK.png" alt="Computer Man" style="width:300px;height:55px; float:left;">
-  </div>
-<div class="topnav" id="customNav" align="right">
 
- <a href="index.php" class="active">Home</a>
- <a href="aboutMe.php">About</a>
- <a href="devBlog.php">Development Blog</a>
- <a href="showcase.php">Showcase</a>
- <a href="contact.php">Contact</a>
- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-   <i class="fa fa-bars"></i>
- </a>
-</div>
+<img src="https://i.imgur.com/CnqvXCK.png" alt="Codemanlogo"
+class ="logo" style="width:300px;height:50px;">
+<div class="container">
+<nav>
+  <ul>
+  <li><a href="index.php">Home</a></li>
+  <li><a href="aboutMe.php">About</a></li>
+  <li><a href="devBlog.php">Development Blog</a></li>
+  <li><a href="showcase.php">Showcase</a></li>
+  <li><a href="contact.php">Contact</a></li>
+</ul>
 </nav>
+</div>
 
 <style>
-/* Add a black background color to the top navigation */
-.topnav {
-  float: left;
- background-color: #222;
- overflow: hidden;
+
+header {
+  background: #668586;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
- align: left;
+header::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.logo {
+  float: left;
+  margin: 10px 30px;
+}
+
+nav {
+float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 0px;
+  padding-top: 25px;
+  position: relative;
+}
+
+nav li::after {
+  content: "|";
+  float: right;
+  color: #ffffff;
+  padding: 2px 60px;
+}
+
+nav li:last-child::after {
+  display: none;
+}
+
+nav a {
+color: #ffffff;
  float: left;
  display: block;
- color: #f2f2f2;
- text-align: left;
- padding: 15px 56px;
+ font-weight: bold;
  text-decoration: none;
- font-size: 17px;
+ font-size: 20px;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
- background-color: #ddd;
- color: black;
+nav a:hover {
+  color: #111;
 }
-
-/* Add an active class to highlight the current page */
-.topnav a.active {
- background-color: #4c9daf;
- color: white;
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
- display: none;
-}
-
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 750px) {
- .topnav a:not(:first-child) {display: none;}
- .topnav a.icon {
-   float: right;
-   display: block;
- }
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 750px) {
- .topnav.responsive {position: relative;}
- .topnav.responsive a.icon {
-   position: absolute;
-   right: 0;
-   top: 0;
- }
-}
- .topnav.responsive a {
-   float: center;
-   display: block;
-   text-align: center;
- }
 
 body {
-background-image: url('https://blog.hostbaby.com/wp-content/uploads/2014/03/PaintSwatches_1920x1234.jpg');
+  margin: 0;
+  font-family: 'Candara' , sans-serif;
 }
-
 </style>
-
-<script>
-  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
+</header>
+</html>
