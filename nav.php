@@ -12,7 +12,7 @@ class ="logo" style="width:300px;height:50px;">
   <li><a href="index.php">Home</a></li>
   <li><a href="aboutMe.php">About</a></li>
   <li><a href="devBlog.php">Development Blog</a></li>
-  <li><a href="showcase.php">Showcase</a></li>
+  <li><a href="showcase.php">Portfolio</a></li>
   <li><a href="contact.php">Contact</a></li>
 </ul>
 </nav>
@@ -41,7 +41,7 @@ header::after {
 }
 
 nav {
-float: right;
+float: left;
 }
 
 nav ul {

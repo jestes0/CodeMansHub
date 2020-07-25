@@ -3,19 +3,17 @@
   Codemans Hub
 </title>
 <head>
-  <link rel="stylesheet" type="text/css" href="contact.css">
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<link rel="stylesheet" type="text/css" href="contact.css">
 </head>
 
 <body>
 <!--Load navigation bar from nav.php-->
   <?php
-
   include 'nav.php';
   ?>
 
-  <div class="header">
     <h1>Contact</h1>
-  </div>
 
 <!--Form Designed to enter in contact information.-->
 <div class="section">
@@ -43,7 +41,7 @@
   </div>
 
   <div class="inputcol">
-    <input type="text" id="Email" name="Email" placeholder="Email Address">
+    <input type="text" id="Email" name="Email" placeholder="Email Address" style="width: 500px">
   </div>
 </div>
 
@@ -53,19 +51,24 @@
   </div>
 
   <div class="inputcol">
-    <input type="text" id="Phone" name="Phone" placeholder="Phone Number" maxlength="10">
+    <input type="text" id="Phone" name="Phone" placeholder="Phone Number" maxlength="10" style="width: 250px">
   </div>
   </div>
 
 <div class="row">
   <div class="labelcol">
-    <label for="Message">Message (Limit 2000 characters.)</label>
+    <label for="Message">Message</label>
   </div>
 
+  <div class="row">
   <div class ="inputcol">
-    <input type="text" id="Message" name="Message" placeholder="Message..." maxlength = "2000" style="height:200px">
-  </div>
+    <textarea id="Message" name="Message" placeholder="Message... Limit 2000 Characters"
+    maxlength = "2000" style="height:200px"></textarea>
 </div>
+</div>
+
+<br>
+<div class="g-recaptcha" data-sitekey="6LfwmLUZAAAAAI4FtWneh7Q2us9J_MxNNkkYKbsT"></div>
 
 <div class="row">
   <input type="submit" value="Submit" name="SubmitButton">
@@ -75,6 +78,68 @@
 </div>
 
 <?php
+
+$postData = $statusMsg = '';
+$status = 'error';
+
+// If the form is submitted
+if(isset($_POST['submit'])){
+    $postData = $_POST;
+
+    // Validate form fields
+    if(!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['message'])){
+
+        // Validate reCAPTCHA box
+        if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])){
+            // Google reCAPTCHA API secret key
+            $secretKey = '6LfwmLUZAAAAANTBckuggesJyP-je_dQ5PnMdNg3';
+
+            // Verify the reCAPTCHA response
+            $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secretKey.'&response='.$_POST['g-recaptcha-response']);
+
+            // Decode json data
+            $responseData = json_decode($verifyResponse);
+
+            // If reCAPTCHA response is valid
+            if($responseData->success){
+                // Posted form data
+                $name = !empty($_POST['name'])?$_POST['name']:'';
+                $email = !empty($_POST['email'])?$_POST['email']:'';
+                $message = !empty($_POST['message'])?$_POST['message']:'';
+
+                // Send email notification to the site admin
+                $to = 'admin@example.com';
+                $subject = 'New contact form have been submitted';
+                $htmlContent = "
+                    <h1>Contact request details</h1>
+                    <p><b>Name: </b>".$name."</p>
+                    <p><b>Email: </b>".$email."</p>
+                    <p><b>Message: </b>".$message."</p>
+                ";
+
+                // Always set content-type when sending HTML email
+                $headers = "MIME-Version: 1.0" . "\r\n";
+                $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+                // More headers
+                $headers .= 'From:'.$name.' <'.$email.'>' . "\r\n";
+
+                // Send email
+                @mail($to,$subject,$htmlContent,$headers);
+
+                $status = 'success';
+                $statusMsg = 'Your contact request has submitted successfully.';
+                $postData = '';
+            }else{
+                $statusMsg = 'Robot verification failed, please try again.';
+            }
+        }else{
+            $statusMsg = 'Please check on the reCAPTCHA box.';
+        }
+    }else{
+        $statusMsg = 'Please fill all the mandatory fields.';
+    }
+}
+
 
 $error = 0;
 
@@ -134,10 +199,11 @@ else {
 
   print "Submitting Email...";
   $to = "jestes29706@gmail.com";
-  $subject = "Website Response from User." + $FName;
+  $subject = "Website Response from: " . $FName . $LName;
   $msg = $Message;
+  $headers = 'From: ' . $Email;
 
-  mail($to,$subject,$msg);
+  mail($to,$subject,$msg,$headers);
 
   echo "<script>
           setTimeout(function() {
