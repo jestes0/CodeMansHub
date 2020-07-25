@@ -1,77 +1,93 @@
+/*/////////////////////////////////////////////////////////////////////////////
+
+File Name: about.css
+Creator: Johnathan Estes
+Purpose: Creates the style sheet for the aboutMe.php page.
+
+/////////////////////////////////////////////////////////////////////////////*/
+
+/*Creates the Header Tab for the Page*/
 .header {
-  padding: 5px;
-  font-size: 32px;
-  text-align: center;
-  color: #ffffff;
-  background: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    font-size: 32px;
+    text-align: center;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.5);
 }
 
+/*Creates a left column.*/
 .leftcol {
-  float: left;
-  width: 60%;
-  margin-top: 10px;
+    float: left;
+    width: 60%;
+    margin-top: 10px;
 }
 
+/*Creates a right column.*/
 .rightcol {
-  float: right;
-  width: 30%;
-  margin-top: 10px;
-  margin-left: 50px;
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+    margin-left: 50px;
 }
 
+/*Creates a background for a page section.*/
 .section {
-  background: rgba(255, 255, 255, 0.75);
-  margin-top: 25px;
-  margin-left: 50px;
-  padding: 10px;
-  width: 90%;
+    background: rgba(255, 255, 255, 0.75);
+    margin-top: 25px;
+    margin-left: 50px;
+    padding: 10px;
+    width: 90%;
 }
 
+/*Creates a placeholder image background and border.*/
 .placeholder {
-  background: #444444;
-  padding: 5px;
-  height: 550px;
-  width: 450px;
-  margin-top: 30px;
-
+    background: #444444;
+    padding: 5px;
+    height: 550px;
+    width: 450px;
+    margin-top: 30px;
 }
 
+/*Fixes an issue with creating breaks after the section border.*/
 .section:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
+/*Adjust the properties for images on the page.*/
 img {
     width: 100%;
     height: 100%;
 }
+
+
+/*Adds the background color for the page*/
 body {
-  background-color: #82AEB1;
+    background-color: #82AEB1;
 }
 
+/*Adjusts the h1 tag properties*/
 h1 {
-  font-size: 48px;
+    font-size: 48px;
 }
 
+/*Adjusts the p tag properties*/
 p {
-font-size: 16px;
-line-height:30px
+    font-size: 16px;
+    line-height: 30px
 }
 
-a:link {
-    color: #111111;
-    text-decoration: none;
-}
-
-a:hover {
-  border-color: #999999;
-}
-
+/*Adds property to adjust webpage items as the screensize changes*/
 @media screen and (max-width: 1700px) {
-  .leftcol, .rightcol, .section, input[type=submit], .placeholder, img{
-    width: 75%;
-    height: auto;
-    margin-top: 0;
-  }
+    .leftcol,
+    .rightcol,
+    .section,
+    input[type=submit],
+    .placeholder,
+    img {
+        width: 75%;
+        height: auto;
+        margin-top: 0;
+    }
 }
