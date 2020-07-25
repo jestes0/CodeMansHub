@@ -1,8 +1,36 @@
-# Personal-Website
-This is a personal Website that I have developed to show off my portfolio items as well as build a website from scratch.
+# CodeMan's Hub Version 3.0  [![Conventional Commits](https://img.shields.io/badge/Version-3.0.0-green.svg)](https://conventionalcommits.org)
 
-The website utilizes HTML and CSS for the primary UI design of the website. There are some JavaScript scripts that handle certain items and events. PHP is used for back-end events within the website.
+## About
+CodeMan's Hub is a personal portfolio website I created from scratch to showcase my work across college and after. Most of it is standard php with some small additional features sprinkled in to add more dynamic features. This project combines my knowledge of front-end design with back-end processing.
 
-The website has undergone many different changes and was redesigned from the ground up to provide a much more consistent design. Work is still being undergone to add on and improve the website.
+## Technologies
 
-To visit the website, follow the link: https://codemanshub.com/
+- HTML5
+- CSS3
+- JavaScript
+- PHP 7.2
+- Hosting by Hostinger
+- Google ReCaptcha
+
+## Setup
+
+Most of the website setup is explanatory. Within the public_html file, upload all of the relevant files. Index.php is the homepage file. Nav.php must also be included to utilize the navbar and allow an easy transition between pages. 
+
+To utilize Google Recaptcha, log in to your google account. From there, go to the Google recaptcha setup. Make sure to specify the domain you wish to add. Then, hit submit. You will be given two keys from Google, a Public and Private Key. 
+
+In the contact.php file, Enter this line where you want the Captcha to appear:
+
+```HTML
+<div class="g-recaptcha" data-sitekey="RECAPTCHA_PUBLIC_KEY"></div>
+```
+
+In the PHP code in contact.php, there is a variable holding the secret key:
+
+```PHP
+$secretKey = '6LfwmLUZAAAAANTBckuggesJyP-je_dQ5PnMdNg3';
+```
+
+Be sure to add the specified keys in their proper locations. After a page refresh, the server should recognize the keys and the Captcha will be online.
+
+## Website Link
+To visit the website in action, follow the link: https://codemanshub.com/
