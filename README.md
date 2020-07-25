@@ -1,4 +1,4 @@
-# Personal-Website
+# CodeMan's Hub
 This is a personal Website that I have developed to show off my portfolio items as well as build a website from scratch.
 
 The website utilizes HTML and CSS for the primary UI design of the website. There are some JavaScript scripts that handle certain items and events. PHP is used for back-end events within the website.
