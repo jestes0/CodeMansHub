@@ -5,8 +5,8 @@ CodeMan's Hub is a personal portfolio website I created from scratch to showcase
 
 ## Technologies
 
-- HTML
-- CSS
+- HTML5
+- CSS3
 - JavaScript
 - PHP 7.2
 - Hosting by Hostinger
