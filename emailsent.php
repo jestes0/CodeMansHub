@@ -28,7 +28,11 @@
 </div>
 
 <?php
-header( "refresh:5 ; url=index.php" );
+echo "<script>
+   setTimeout(function(){
+      window.location.href = 'index.php';
+   }, 5000);
+</script>"
 ?>
 
 </body>

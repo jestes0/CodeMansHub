@@ -16,11 +16,30 @@
 </div>
 
 <div class="blogbody">
+  <div class="section">
+    <h2>CodeMan Website Update: July 23rd, 2020</h2>
+    <h5>Posted 24 July, 2020, Updated 3:56 P.M.</h5>
+    <div class="placeholder" style:"height:400px;">
+       <img src="https://i.imgur.com/zMStYyG.png" alt="Codeman Picture" style="width:auto;height:100px;"></div>
+    <p>Another Day, Another time to continue coding!
+
+      The following Website Changes has been implemented:
+      <ul>
+        <li>Added Captchas to Contact Form to prevent bot abuse</li>
+        <li>Completed the General Homepage UI and Design</li>
+        <li>Worked on the Portfolio UI Design and Setup</li>
+        <li>Added Major Project Details to Portfolio</li>
+        <li>Started work on the About Me UI</li>
+      </ul>
+
+    <p> The website will be close to finishing soon, so stay tuned!</p>
+  </div>
+
 <div class="section">
   <h2>CodeMan Website Update: July 23rd, 2020</h2>
   <h5>Posted 23 July, 2020, Updated 3:56 P.M.</h5>
   <div class="placeholder" style:"height:400px;">
-     <img src="https://i.imgur.com/zMStYyG.png" alt="Codeman Picture" style="width:500px;height:100px;"></div>
+     <img src="https://i.imgur.com/zMStYyG.png" alt="Codeman Picture" style="width:auto;height:100px;"></div>
   <p>Two Dev updates in a week and more to come!
 
     The following changes has been completed on the CodeMan Website:
@@ -31,7 +50,7 @@
       <li>Revamped the Contact form's design</li>
     </ul>
 
-  <p> More updates are geared in he future, so have a great day!</p>
+  <p> More updates are geared in the future, so have a great day!</p>
 </div>
 <div class="section">
   <h2>CodeMan Website Update: July 22nd, 2020</h2>
