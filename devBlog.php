@@ -17,7 +17,25 @@
 
 <div class="blogbody">
   <div class="section">
-    <h2>CodeMan Website Update: July 23rd, 2020</h2>
+    <h2>CodeMan Website Update: July 25th, 2020</h2>
+    <h5>Posted 25 July, 2020, Updated 10:14 P.M.</h5>
+    <div class="placeholder" style:"height:400px;">
+       <img src="https://i.imgur.com/zMStYyG.png" alt="Codeman Picture" style="width:auto;height:100px;"></div>
+    <p>More Updates to Come, and then some! And a new Blog Update system!
+
+      The following Updates have been implemented:
+      <ul>
+        <li>Home Page: Resolved some issues with objects in Mobile</li>
+        <li>Home / Portfolio: Fixed Button colors to stand out better</li>
+        <li>Contact: Added Proper Validation for input fields</li>
+        <li>Portfolio: Fixed an issue with auction hub not opening a new window.</li>
+      </ul>
+
+    <p> The website's structure is completed, and will be kept updated for the future. Thanks for reading!</p>
+  </div>
+
+  <div class="section">
+    <h2>CodeMan Website Update: July 24rd, 2020</h2>
     <h5>Posted 24 July, 2020, Updated 3:56 P.M.</h5>
     <div class="placeholder" style:"height:400px;">
        <img src="https://i.imgur.com/zMStYyG.png" alt="Codeman Picture" style="width:auto;height:100px;"></div>
