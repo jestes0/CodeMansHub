@@ -1,78 +1,135 @@
+
+
+/*/////////////////////////////////////////////////////////////////////////////
+
+File Name: contact.css
+Creator: Johnathan Estes
+Purpose: Creates the style sheet for the contact.php page.
+
+/////////////////////////////////////////////////////////////////////////////*/
+
+
+/*Creates the Header Tab for the Page*/
+
 .header {
-  padding: 5px;
-  font-size: 32px;
-  text-align: center;
-  color: #ffffff;
-  background: rgba(0, 0, 0, 0.5);
+	padding: 5px;
+	font-size: 32px;
+	text-align: center;
+	color: #ffffff;
+	background: rgba(0, 0, 0, 0.5);
 }
+
+
+/*Creates a background for a page section.*/
 
 .section {
-  background: rgba(255, 255, 255, 0.75);
-  width: 100%;
-  margin-top: 25px;
-  padding: 30px;
+	background: rgba(255, 255, 255, 0.75);
+	width: 100%;
+	margin-top: 25px;
+	padding: 30px;
 }
+
+
+/*Fixes an issue with row placement on a line.*/
 
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 
-body {
-  background-color: #82AEB1;
-}
+
+/*Specifies Formatiing for form contents.*/
 
 .form {
-  font-size: 20px;
-  font-weight: bold;
+	font-weight: bold;
 }
+
+
+/*Creates a column for labels.*/
 
 .labelcol {
-  float: left;
-  width: 20%;
-  margin-top: 15px;
+	float: left;
+	width: 20%;
+	margin-top: 15px;
 }
+
+
+/*Creates a column for input boxes.*/
 
 .inputcol {
-  float: left;
-  width: 60%;
-  margin-top: 15px;
+	float: left;
+	width: 60%;
+	margin-top: 15px;
 }
 
-input[type=text], select, textarea {
-width: 100%;
-padding: 16px;
-border: 1px solid #ccc;
-border-radius: 4px;
-resize: vertical;
 
+/*Adds the background color for the page.*/
+
+body {
+	background-color: #82AEB1;
 }
+
+
+.error {
+	margin-right: 30px;
+}
+/*Specifies the styling for text areas and input boxes.*/
+
+input[type=text],
+select,
+textarea {
+	width: 100%;
+	padding: 16px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+
+
+/*Creates Hover over effect for input boxes.*/
 
 input[type=text]:hover {
-  border-color: #111111;
+	border-color: #111111;
 }
 
-input[type=submit]{
-  color: #444444;
-  padding: 10px 10px;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  float: center;
-  width: 16%;
-  height: 70px;
-  font-size: 18px;
-  margin-top: 20px;
+
+/*Creates styling  effect for submit buttons.*/
+
+input[type=submit] {
+	color: #444444;
+	padding: 10px 10px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	float: center;
+	width: 16%;
+	height: 70px;
+	font-size: 18px;
+	margin-top: 20px;
 }
+
+
+/*Creates hover over effect for submit buttons.*/
 
 input[type=submit]:hover {
-  background-color: #aaaaaa;
+	background-color: #aaaaaa;
 }
 
+label {
+	font-size: 16px;
+	margin-top: 30px;
+	margin-left: 5px;
+}
+/*Adds property to adjust webpage items as the screensize changes.*/
+
 @media screen and (max-width: 600px) {
-  .labelcol, .inputcol, input[type=submit], {
-    width: 100%;
-    margin-top: 0;
-  }
+	input[type=submit],
+	{
+		width: 66%;
+		height: auto;
+		margin-top: 0;
+		font-size: 14px;
+
+	}
 }

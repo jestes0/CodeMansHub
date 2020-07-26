@@ -1,31 +1,60 @@
+
+
+/*/////////////////////////////////////////////////////////////////////////////
+
+File Name: devformat.css
+Creator: Johnathan Estes
+Purpose: Creates the style sheet for the devBlog.php page.
+
+/////////////////////////////////////////////////////////////////////////////*/
+
+
+/*Creates the Header Tab for the Page*/
+
 .header {
-  padding: 5px;
-  font-size: 32px;
-  text-align: center;
-  color: #ffffff;
-  background: rgba(0, 0, 0, 0.5);
+	padding: 5px;
+	font-size: 32px;
+	text-align: center;
+	color: #ffffff;
+	background: rgba(0, 0, 0, 0.5);
 }
+
+
+/*Creates a background for a page section.*/
 
 .section {
-  background: rgba(255, 255, 255, 0.75);
-  margin-top: 25px;
-  margin-left: 25px;
-  padding: 10px;
-  width: 80%;
+	background: rgba(255, 255, 255, 0.75);
+	margin-top: 25px;
+	margin-left: 25px;
+	padding: 10px;
+	width: 80%;
 }
+
+
+/*Creates a placeholder image background and border.*/
 
 .placeholder {
-  background: #aaaaaa;
-  padding: 20px;
-  height: 100px;
+	background: #aaaaaa;
+	padding: 20px;
+	height: 100px;
 }
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/*Fixes an issue with creating breaks after the section border.*/
 
 .section:after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 
+
+/*Adds the background color for the page*/
+
 body {
-  background-color: #82AEB1;
+	background-color: #82AEB1;
 }
