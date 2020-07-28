@@ -27,7 +27,7 @@ In the contact.php file, Enter this line where you want the Captcha to appear:
 In the PHP code in contact.php, there is a variable holding the secret key:
 
 ```PHP
-$secretKey = '6LfwmLUZAAAAANTBckuggesJyP-je_dQ5PnMdNg3';
+$secretKey = 'Secret Key Here';
 ```
 
 Be sure to add the specified keys in their proper locations. After a page refresh, the server should recognize the keys and the Captcha will be online.
