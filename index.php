@@ -4,13 +4,14 @@
 </title>
 <head>
   <link rel="stylesheet" type="text/css" href="index.css">
-</head>
-<body>
 
 <!--Load Navbar Components.-->
   <?php
   include 'nav.php'; //Include the navigation bar from nav.php.
   ?>
+</head>
+
+<body>
 <!--Main Page Conents-->
 <div class="leftcol">
 </div>

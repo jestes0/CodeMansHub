@@ -26,9 +26,6 @@ Purpose: Displays information about the website owner.
   ?>
 
   <!-- Creates the website header. -->
-  <div class="header">
-    <h1>Contact</h1>
-</div>
 
 <?php
 
