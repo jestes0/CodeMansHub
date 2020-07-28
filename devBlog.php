@@ -2,25 +2,46 @@
 <title>
   Codemans Hub
 </title>
-<head><link rel="stylesheet" type="text/css" href="devformat.css">
+<head>
+  <link rel="stylesheet" type="text/css" href="devformat.css">
+
 </head>
 
+<?php
+include 'nav.php'; //Include the navigation bar from the nav.php file.
+?>
 <body>
-<!-- -->
-  <?php
-  include 'nav.php'; //Include the navigation bar from the nav.php file.
-  ?>
   <!--Main Page Conents-->
-<div class="header">
-  <h1>Development Blog</h1>
-</div>
 
 <div class="blogbody">
   <div class="section">
     <h2>CodeMan Website Update: July 25th, 2020</h2>
     <h5>Posted 25 July, 2020, Updated 10:14 P.M.</h5>
     <div class="placeholder" style:"height:400px;">
-       <img src="https://i.imgur.com/zMStYyG.png" alt="Codeman Picture" style="width:auto;height:100px;"></div>
+       <img src="https://i.imgur.com/zMStYyG.png" alt="Codeman Picture">
+    </div>
+    <p>Updates Galore! I am beccoming more efficient at pushing these out faster.
+
+      The following Changes Have Been Implemented:
+
+      <ul>
+        <li>General: New Navigation Bar! This will fix the issue with mobile devices.</li>
+        <li>General: New Navigation Font for easier Readability</li>
+        <li>General: Made Navigation Highlighted and easier to see a mouse hover.</li>
+        <li>Home: Fixed Bug where Image would appear in front of Navbar</li>
+        <li>About Me: Added a Convenient Resume Link to download my Resume.</li>
+        <li>All: Removed Title bars for readability and to address bugs.</li>
+      </ul>
+
+    <p> I will continue to address mobile visibility and provide improvements Overall. Thank you for visiting the Hub!</p>
+  </div>
+
+  <div class="section">
+    <h2>CodeMan Website Update: July 25th, 2020</h2>
+    <h5>Posted 25 July, 2020, Updated 10:14 P.M.</h5>
+    <div class="placeholder" style:"height:400px;">
+       <img src="https://i.imgur.com/zMStYyG.png" alt="Codeman Picture">
+    </div>
     <p>More Updates to Come, and then some! And a new Blog Update system!
 
       The following Updates have been implemented:
@@ -31,14 +52,14 @@
         <li>Portfolio: Fixed an issue with auction hub not opening a new window.</li>
       </ul>
 
-    <p> The website's structure is completed, and will be kept updated for the future. Thanks for reading!</p>
+    <p> The website's structure is completed, and will be kept updated for the future. Thank you for visiting the Hub!</p>
   </div>
 
   <div class="section">
     <h2>CodeMan Website Update: July 24rd, 2020</h2>
     <h5>Posted 24 July, 2020, Updated 3:56 P.M.</h5>
     <div class="placeholder" style:"height:400px;">
-       <img src="https://i.imgur.com/zMStYyG.png" alt="Codeman Picture" style="width:auto;height:100px;"></div>
+       <img src="https://i.imgur.com/zMStYyG.png" alt="Codeman Picture"></div>
     <p>Another Day, Another time to continue coding!
 
       The following Website Changes has been implemented:
@@ -50,14 +71,14 @@
         <li>Started work on the About Me UI</li>
       </ul>
 
-    <p> The website will be close to finishing soon, so stay tuned!</p>
+    <p> The website will be close to finishing soon, so stay tuned! Thank you for visiting the Hub!</p>
   </div>
 
 <div class="section">
   <h2>CodeMan Website Update: July 23rd, 2020</h2>
   <h5>Posted 23 July, 2020, Updated 3:56 P.M.</h5>
   <div class="placeholder" style:"height:400px;">
-     <img src="https://i.imgur.com/zMStYyG.png" alt="Codeman Picture" style="width:auto;height:100px;"></div>
+     <img src="https://i.imgur.com/zMStYyG.png" alt="Codeman Picture"></div>
   <p>Two Dev updates in a week and more to come!
 
     The following changes has been completed on the CodeMan Website:
@@ -68,7 +89,7 @@
       <li>Revamped the Contact form's design</li>
     </ul>
 
-  <p> More updates are geared in the future, so have a great day!</p>
+  <p> More updates are geared in the future, so have a great day! Thank you for visiting the Hub!</p>
 </div>
 <div class="section">
   <h2>CodeMan Website Update: July 22nd, 2020</h2>
@@ -86,7 +107,7 @@
       <li>Fixed From page to reduce the size of the text bar</li>
     </ul>
 
-  <p> More updates are geared in he future, so have a great day!</p>
+  <p> More updates are geared in he future, so have a great day! Thank you for visiting the Hub!</p>
 </div>
 </div>
 

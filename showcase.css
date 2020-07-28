@@ -17,21 +17,22 @@
   float: left;
   width: 60%;
   margin-top: 10px;
-  margin-left: 50px;
+  margin-left: 10px;
 }
 .section {
   background: rgba(255, 255, 255, 0.75);
-  margin-top: 35px;
+  margin-top: 200px;
   margin-left: 50px;
   padding: 10px;
   width: 90%;
+  display: flex;
 }
 
 .placeholder {
   background: #aaaaaa;
   padding: 15px;
   height: 350px;
-  width: 100%;
+  width: auto;
 }
 
 .section:after {
@@ -57,10 +58,43 @@ a:hover {
   border-color: #999999;
 }
 
-@media screen and (max-width: 1700px) {
-  .leftcol, .rightcol, .section, input[type=submit], .placeholder, img{
-    width: 75%;
+@media screen and (max-width: 1200px) {
+  .leftcol, .rightcol, input[type=submit] {
+    width: 100%;
     height: auto;
     margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section {
+    width: 90%;
+    margin-left: 25px;
+    height: auto;
+    display: flex;
+    align-items: left;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .placeholder {
+    width: 50%;
+    height: auto;
+
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  img {
+    width: 100%;
+    height: auto;
+
   }
 }

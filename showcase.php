@@ -11,9 +11,6 @@
   include 'nav.php'; //Include the navigation bar from the nav.php file.
   ?>
   <!--Main Page Conents-->
-<div class="header">
-  <h1>Portfolio</h1>
-</div>
 
 <div class="blogbody">
 <div class="section">

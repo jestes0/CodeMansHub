@@ -19,11 +19,12 @@ Purpose: Displays information about the website owner.
         <!-- Include the navigation bar from nav.php.-->
         <?php
             include 'nav.php';
-            ?>
+        ?>
+
+
         <!-- Creates the website header. -->
-        <div class="header">
-            <h1>About Me</h1>
-        </div>
+
+        <br><br>
         <div class="section">
             <div class="leftcol">
                 <h1>Johnathan Estes</h1>
@@ -59,6 +60,8 @@ Purpose: Displays information about the website owner.
                     use the Contact section to send me an email. You can also reach me using
                     my media links below. Thank you so much!
                 </h2>
+
+            <a href="/Resume_CV.Jae.docx" download>View my Resume Here!</a>
             </div>
             <div class="rightcol">
                 <div class = "placeholder">
