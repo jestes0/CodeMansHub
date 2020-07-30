@@ -1,68 +1,58 @@
 <html>
 <title>
-  Codemans Hub
+  CodeMan's Hub- Portfolio
 </title>
-<head><link rel="stylesheet" type="text/css" href="showcase.css">
+
+<!-- Header -->
+
+<head>
+
+  <!-- Call stylesheets for page.-->
+  <link rel="stylesheet" type="text/css" href="showcase.css">
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Ubuntu">
+
+  <!-- Call navbar for page.-->
+  <?php
+    include 'nav.php';
+  ?>
 </head>
 
+<!-- Main Page Conents -->
 <body>
-<!-- -->
-  <?php
-  include 'nav.php'; //Include the navigation bar from the nav.php file.
-  ?>
-  <!--Main Page Conents-->
 
-<div class="blogbody">
-<div class="section">
-  <div class="leftcol">
-    <div class="placeholder">
-      <a href="auctionhub.php"><img src = "https://i.imgur.com/0rwneoi.png"></a>
+<!-- Page Header -->
+<div class="abouthead">
+  <h1>Portfolio Showcase</h1>
 </div>
+
+<!-- Create row of objects. -->
+<div class="row">
+
+  <!-- Create left aligned object. -->
+  <div class="leftsection">
+    <h2>Auction Hub Application</h2>
+    <img src = "https://i.imgur.com/0rwneoi.png">
+    <p>My Senior Capstone Project from College.</p>
+    <div class = "buttonhold">
+      <button onclick="location.href='auctionhub.php'" type="button">
+      Read More...</button>
+    </div>
   </div>
-  <div class=rightcol>
-  <h1><a href="auctionhub.php">Auction Hub Application</a></h1>
-  <h5>August 2019 to May 2020</h5>
 
-  <p>A project worked with four other individuals to design an Auction Application
-  for a non-profit organization.</p>
-</div>
-</div>
-
-<div class="section">
-  <div class="leftcol">
-    <div class="placeholder">
-      <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRGBbsM3-T_I3b-H8gmtnzp2oy7fT_XkOnldA&usqp=CAU
-      ">
-
-</div>
+  <!-- Create right aligned object. -->
+  <div class="rightsection">
+    <h2>Practice Code</h2>
+    <img src = "codingproject.jpg">
+    <p>A compilation of Code I work on in my spare time.</p>
+    <div class = "buttonhold">
+      <button onclick="location.href='showcase.php'" type="button">
+      Coming Very Soon!</button>
+    </div>
   </div>
-  <div class=rightcol>
-  <h1>Personal Coding Projects</h1>
-
-  <p>A compilation of some of my personal coding projects I am working on as well as designs.</p>
-  <p> Coming Soon! </p>
-</div>
 </div>
 
-<div class="section">
-  <div class="leftcol">
-    <div class="placeholder">
-      <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRGBbsM3-T_I3b-H8gmtnzp2oy7fT_XkOnldA&usqp=CAU
-      ">
-</div>
-  </div>
-  <div class=rightcol>
-  <h1>College Coding Projects</h1>
-
-  <p>Projects I have worked on throughout my college career, including a variety of different
-  programming languages and styles.</p>
-  <p> Coming Soon! </p>
-
-</div>
-</div>
-
-</div>
-
-<br>
 </body>
 </html>

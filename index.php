@@ -8,8 +8,10 @@
         href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Ubuntu">
+
+<!-- Call navbar for page.-->
   <?php
-    include 'nav.php'; //Include the navigation bar from nav.php.
+    include 'nav.php'; 
   ?>
 </head>
 

@@ -8,142 +8,195 @@ Purpose: Creates the style sheet for the auctionhub.php page.
 
 /////////////////////////////////////////////////////////////////////////////*/
 
-
-/*Creates the Header Tab for the Page*/
-
-.header {
-	padding: 5px;
-	font-size: 32px;
-	text-align: center;
-	color: #ffffff;
-	background: rgba(0, 0, 0, 0.5);
-}
-
-
-/*Creates a background for a page section.*/
-
-.section {
-	background: rgba(255, 255, 255, 0.75);
-	margin-top: 100px;
-	padding: 10px;
-	width: 100%;
-}
-
-
-/*Creates a left column.*/
-
-.leftcol {
-	float: left;
-	width: 30%;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-
-/*Creates a right column.*/
-
-.rightcol {
-	float: left;
-	width: 60%;
-	margin-top: 10px;
-	margin-left: 75px;
-}
-
-
-/*Creates a placeholder image background and border.*/
-
-.placeholder {
-	background: #aaaaaa;
-	padding: 15px;
-	height: 400px;
-	width: 100%;
-	margin-top: 50px;
-}
-
-
-/*Fixes an issue with creating breaks after the section border.*/
-
-.section:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-
-/*Adjust the properties for images on the page.*/
-
-img {
-	width: 100%;
-	height: 100%;
-}
-
-
 /*Adds the background color for the page.*/
 
 body {
-	background-color: #82AEB1;
+	background-color: #39393a;
 }
 
+.abouthead {
+	margin-left: 25px;
+	font-size: 28px;
+	font-family: "Ubuntu"; /* Imported from Google Fonts*/
+	font-weight: bold;
+	color: #ffffff;
+}
 
-/*Stylizes the buttons for the webpage.*/
+/*Creates a row of content*/
+.row {
+	display: flex;
+	justify-content: center;
+  width: 100%;
+}
 
-button {
-	color: #eeeeee;
-	background-color: #468189;
+/*Creates spacing after row.*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Creates the main content section*/
+.content {
+	margin-top: 50px;
+	width: 95%;
+	background: #444444;
 	padding: 10px 10px;
-	border: none;
-	border-radius: 3px;
-	cursor: pointer;
-	float: center;
-	width: 100%;
-	height: 70px;
-	font-size: 24px;
-	margin-top: 20px;
 }
 
-
-/*Creates a hover effect when the user is over the button.*/
-
-button:hover {
-	background-color: #666666;
+/*Creates a left aligned section.*/
+.leftsection {
+  float: left;
+	width: 40%;
+	margin: 25px auto;
+	padding: 20px 20px;
 }
 
-
-/*Adjusts the h1 tag properties*/
-
-h1 {
-	font-size: 40px;
+/*Creates a right aligned section.*/
+.rightsection {
+	float: right;
+  width: 50%;
+  margin: 25px auto;
+	padding: 20px 20px;
 }
 
+/*Formats the image properties.*/
+img {
+  display: block;
+  width: 95%;
+  height: auto;
+  margin: 0 35px 0px 0;
+}
 
-/*Adjusts the p tag properties*/
+/*Styles h2 content.*/
+h2 {
+  font-size: 24px;
+	line-height: 30px;
+  text-align: justify;
+  color: #ffffff;
+  font-family: "Montserrat"; /* Imported from Google Fonts*/
+}
 
+/*Styles h4 content.*/
+h4 {
+  font-size: 20px;
+	line-height: 30px;
+  text-align: justify;
+  color: #ffffff;
+  font-family: "Montserrat"; /* Imported from Google Fonts*/
+	margin-bottom: 50px;
+}
+
+/*Styles main text content.*/
 p {
-	font-size: 16px;
-	line-height: 25px
+  font-size: 16px;
+	line-height: 30px;
+  text-align: justify;
+  color: #ffffff;
+  font-family: "Montserrat"; /* Imported from Google Fonts*/
 }
 
-a:link {
-	color: #111111;
-	text-decoration: none;
+/*Adjusts button properties*/
+button {
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  color: #ffffff;
+	background-color: #934141;
+	padding: 25px 10px;
+	border: none;
+	border-radius: 0px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-size: 28px;
+  font-weight: bold;
+	transition: .3s;
 }
 
-a:hover {
-	color: #999999;
+/* Displays hover effect for buttons.*/
+button:hover {
+  background-color: #734141;
 }
 
-
-/*Adds property to adjust webpage items as the screensize changes.*/
-
-@media screen and (max-width: 1700px) {
-	.leftcol,
-	.rightcol,
-	.section,
-	input[type=submit],
-	.placeholder,
-	img {
-		width: 75%;
-		height: auto;
-		margin-top: 0;
+@media screen and (max-width: 1015px) {
+	/* Readjusts header font.*/
+	.abouthead {
+		text-align: center;
+		font-size: 3vw;
 	}
+
+	h2 {
+	  font-size: 4vw;
+		line-height: 30px;
+	  text-align: justify;
+	  color: #ffffff;
+	  font-family: "Montserrat"; /* Imported from Google Fonts*/
+	}
+
+	h4 {
+	  font-size: 3vw;
+		line-height: 30px;
+	  text-align: justify;
+	  color: #ffffff;
+	  font-family: "Montserrat"; /* Imported from Google Fonts*/
+		margin-bottom: 50px;
+	}
+
+	p {
+	  font-size: 2vw;
+		line-height: 30px;
+	  text-align: justify;
+	  color: #ffffff;
+	  font-family: "Montserrat"; /* Imported from Google Fonts*/
+	}
+
+	/* Readjusts row organization.*/
+	.row {
+		display: block;
+		margin: 0px auto;
+	}
+
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	.content {
+		background: none;
+		display: block;
+		margin-top: 50px;
+		width: auto;
+		padding: 30px 20px;
+	}
+
+	/* Readjusts left section organization.*/
+	.leftsection {
+		display: block;
+		float: left;
+		width: auto;
+		height: auto;
+		background: #444444;
+		margin-top: 0 auto 0 auto;
+	}
+
+	/* Readjusts right section organization.*/
+	.rightsection {
+		display: block;
+		width: auto;
+		float: auto;
+		background: #444444;
+		height: auto;
+		margin: 0 auto 0 auto;
+	}
+
+	/* Readjusts button font.*/
+	button {
+		width: 100%;
+		font-size: 4vw;
+	}
+
+}
+
 }

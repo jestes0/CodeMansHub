@@ -64,6 +64,7 @@
     <img src="myself.jpeg" class="myimg">
   </div>
 
+<!-- Resume and External Links-->
 <div class="section2">
 <button class="btn"onclick="window.open('Resume_CV.Jae.docx')">
   <i class="fa fa-download"></i> Download CV/Resume</button>
