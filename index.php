@@ -4,68 +4,61 @@
 </title>
 <head>
   <link rel="stylesheet" type="text/css" href="index.css">
-
-<!--Load Navbar Components.-->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Ubuntu">
   <?php
-  include 'nav.php'; //Include the navigation bar from nav.php.
+    include 'nav.php'; //Include the navigation bar from nav.php.
   ?>
 </head>
 
-<body>
 <!--Main Page Conents-->
-<div class="leftcol">
+<body>
+
+<!--Load Navbar Components.-->
+<!-- Insert Logo onto the Index Page -->
+<img src="CodeMan_Logo.png" alt="Codeman_Logo" class="logoimg">
+
+<h1>"The home of a man who loves to code."</h1>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="sectionright">
+  <div class="sectionhead">
+  More About Me
+</div>
+<div class="textdesc">
+    Learn more about the man behind the CodeMan. A description about how I became
+    interested with Software Development and the journey to get where I am today.
+</div>
+  <button onclick="location.href='aboutMe.php'" type="button">Read More</button>
+
 </div>
 
-<div class="rightcol">
-<div class="header">
- CodeMan's Hub
+<div class="sectionleft">
+  <div class="sectionhead">
+  View My Portfolio
 </div>
-</div>
-
-<div class="leftcol">
-  <div class="image">
-    <div id = "animated-example" class = "animated fadeIn">
-    <img src= "https://image.flaticon.com/icons/png/512/90/90603.png" width=auto; height=auto;>
+  <div class="textdesc">
+      Check out my online Portfolio, which details some of my most notable
+      projects I have worked on in college and beyond.
   </div>
-
-</div>
-</div>
-
-<div class="rightcol">
-  <div class="maintext">
- <p>Welcome to the home of a man who loves to code.</p>
- <p> I mean, who doesn't love programming?</p>
+    <div class = "buttonhold">
+    <button onclick="location.href='showcase.php'" type="button">View Portfolio</button>
+  </div>
 </div>
 
-<div class="section">
-    <div class="left">
-  <p>More About Me</p>
+<div class="sectionright">
+  <div class="sectionhead">
+  Contact Me
 </div>
-<div class="right">
-  <button onclick="location.href='aboutMe.php'" type="button">Check it Out!</button>
-</div>
-</div>
-
-<div class="section">
-  <div class="left">
-  <p>View My Portfolio</p>
+  <div class="textdesc">
+      If you want to contact me, please follow the link to be directed to a form
+      to reach me via Email.
+  </div>
+    <button onclick="location.href='contact.php'" type="button">Contact!</button>
 </div>
 
-  <div class="right">
-    <button onclick="location.href='showcase.php'" type="button">Check it Out!</button>
-</div>
-</div>
-
-<div class="section">
-  <div class="left">
-  <p>Reach Out to Me</p>
-</div>
-
-  <div class="right">
-    <button onclick="location.href='contact.php'" type="button">Check it Out!</button>
-</div>
-</div>
-</div>
 <br>
 </body>
 </html>

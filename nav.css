@@ -1,7 +1,6 @@
 
 .navheader {
-  position: fixed;
-  background-color: #668586;
+  position: absolute;
   width: 100%;
   top: 0;
   left: 0;
@@ -13,19 +12,19 @@
   font-size: 28px;
   margin-left: 25px;
   margin-top: 25px;
-  line-height: 75px;
+  line-height: 0px;
   color: #eeeeee;
   cursor: pointer;
 }
 
 .navbar {
-  background-color: #668586;
   width: 100%;
   height: 75px;
 }
 
 .ulitem {
-  float: right;
+  text-align: center;
+  top: 0;
   margin-right: 0px;
   padding: 0;
   margin: 0;
@@ -33,17 +32,18 @@
 
 .navbar .ulitem .liitem {
   display: inline-block;
-  line-height: 75px;
-  margin: 0 20px;
+  line-height: 0px;
+  margin: 0 25px;
 }
 
 .navbar .ulitem .liitem a{
-
+  position: relative;
+  line-height: 18px;
   color: #eeeeee;
   font-size: 18px;
   font-family: "Ubuntu";
   font-weight: bold;
-  padding: 10px 10px;
+  padding: 15px 35px;
   border-radius: 4px;
   text-decoration: none;
   list-style: none;
@@ -52,7 +52,7 @@
 
 .ulitem .liitem a:hover {
   color: #161d1d;
-  background-color: #d3dede;
+  background-color: #aba4a4;
   transition: .4s;
 }
 
@@ -72,19 +72,20 @@ img {
   visibility: visible;
 }
    .ulitem {
-    position: absolute;
+    position: relative;
+    float: left;
     overflow: hidden;
-    width: 30%;
+    width: 100%;
     height: 0;
-    top: 75px;
-    background: #4b6162;
+    top: 22px;
+    left: 0px;
+    background: #333333;
     text-align: center;
     transition: all .5s linear;
-    padding: 0;
-    margin: 0;
   }
 
 .navbar {
+  background-color: #666666;
   float: right;
   position: relative;
   z-index: 1;
@@ -94,13 +95,17 @@ img {
   .navbar .ulitem .liitem {
     display: block;
     position: relative;
+    margin: 10px 0;
 
   }
 
   .navbar .ulitem .liitem a{
+    line-height: 75px;
     color: #eeeeee;
     font-size: 24px;
     font-weight: bold;
+    border-bottom: 1px solid white;
+
   }
 
   .ulitem .liitem a:hover {
@@ -110,7 +115,7 @@ img {
   }
 
 #cbox:checked ~ .ulitem {
-  height: 41vh;
+  height: 475px;
 
 }
 
