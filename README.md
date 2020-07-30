@@ -1,4 +1,4 @@
-# CodeMan's Hub Version 3.0  [![Conventional Commits](https://img.shields.io/badge/Version-3.2.0-green.svg)](https://conventionalcommits.org)
+# CodeMan's Hub Version 3.2  [![Conventional Commits](https://img.shields.io/badge/Version-3.2.0-green.svg)](https://conventionalcommits.org)
 
 ## About
 CodeMan's Hub is a personal portfolio website I created from scratch to showcase my work across college and after. Most of it is standard php with some small additional features sprinkled in to add more dynamic features. This project combines my knowledge of front-end design with back-end processing.
