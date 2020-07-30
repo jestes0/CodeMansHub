@@ -1,5 +1,3 @@
-
-
 /*/////////////////////////////////////////////////////////////////////////////
 
 File Name: devformat.css
@@ -8,31 +6,45 @@ Purpose: Creates the style sheet for the devBlog.php page.
 
 /////////////////////////////////////////////////////////////////////////////*/
 
+/*Adds the background color for the page*/
+body {
+	background-color: #39393a;
+}
 
-/*Creates the Header Tab for the Page*/
-
-.header {
-	padding: 5px;
-	font-size: 32px;
-	text-align: center;
+/*Formats the Header for the page*/
+.abouthead {
+	margin-top: 150px;
+	font-size: 40px;
 	color: #ffffff;
-	background: rgba(0, 0, 0, 0.5);
+	font-family: "Ubuntu"; /* Imported from Google Fonts*/
+	font-weight: bold;
+  text-align: center;
 }
 
-
-/*Creates a background for a page section.*/
-
-.section {
-	background: rgba(255, 255, 255, 0.75);
-	margin-top: 175px;
-	margin-left: 25px;
-	padding: 10px;
-	width: 80%;
+/*Creates a row of content*/
+.row {
+	display: flex;
+	justify-content: center;
+  width: 100%;
 }
 
+/*Creates spacing after row.*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-/*Creates a placeholder image background and border.*/
+/*Creates a left aligned section.*/
+.leftsection {
+  float: left;
+	background: #444444;
+	width: 90%;
+	margin: 25px auto;
+	padding: 20px 20px;
+}
 
+/*Insert a placeholder where images are placed.*/
 .placeholder {
 	background: #aaaaaa;
 	padding: 20px;
@@ -40,38 +52,81 @@ Purpose: Creates the style sheet for the devBlog.php page.
 	width: auto;
 }
 
-img {
-    width: 80%;
-    height: 100%;
+/*Styles h2 content.*/
+h2 {
+  font-size: 24px;
+	line-height: 30px;
+  text-align: justify;
+  color: #ffffff;
+  font-family: "Ubuntu"; /* Imported from Google Fonts*/
 }
 
-/*Fixes an issue with creating breaks after the section border.*/
-
-.section:after {
-	content: "";
-	display: table;
-	clear: both;
+h6 {
+	font-size: 18px;
+	text-align: justify;
+	color: #ffffff;
+	font-family: "Montserrat"; /* Imported from Google Fonts*/
+	margin-bottom: 50px;
 }
 
-
-/*Adds the background color for the page*/
-
-body {
-	background-color: #82AEB1;
+p {
+	font-size: 18px;
+	line-height: 30px;
+	text-align: justify;
+	color: #ffffff;
+	font-family: "Montserrat"; /* Imported from Google Fonts*/
 }
 
-@media screen and (max-width: 2000px) {
-  .placeholder {
-    width: 90%;
-    height: auto;
-
-  }
+li {
+	font-size: 16px;
+	line-height: 30px;
+	text-align: justify;
+	color: #ffffff;
+	font-family: "Montserrat"; /* Imported from Google Fonts*/
 }
 
-@media screen and (max-width: 2000px) {
-  img {
-    width: 100%;
-    height: auto;
+@media screen and (max-width: 1015px) {
+	/* Readjusts header font.*/
+	.abouthead {
+		text-align: center;
+		font-size: 3vw;
+	}
 
-  }
+	h2 {
+	  font-size: 4vw;
+		line-height: 30px;
+	  text-align: justify;
+	  color: #ffffff;
+	  font-family: "Ubuntu"; /* Imported from Google Fonts*/
+	}
+
+	h6 {
+	  font-size: 2vw;
+		line-height: 30px;
+	  text-align: justify;
+	  color: #ffffff;
+	  font-family: "Montserrat"; /* Imported from Google Fonts*/
+		margin-bottom: 50px;
+	}
+
+	p {
+	  font-size: 1.5vw;
+		line-height: 30px;
+	  text-align: justify;
+	  color: #ffffff;
+	  font-family: "Montserrat"; /* Imported from Google Fonts*/
+	}
+
+	/* Readjusts right section organization.*/
+	.rightsection {
+		display: block;
+		width: auto;
+		float: auto;
+		background: #444444;
+		height: auto;
+		margin: 0 auto 0 auto;
+	}
+
+
+
 }
