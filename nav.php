@@ -9,8 +9,6 @@
 <header>
   <div class ='navheader'>
 <nav class = "navbar" data-target="#navbar-collapse">
-  <img src="https://i.imgur.com/CnqvXCK.png" alt="Codemanlogo"
-  style="width:300px;height:50px;">
   <input type="checkbox" id="cbox">
   <label for="cbox" class="hambox">
   <i class="fas fa-bars" ></i></label>

@@ -1,156 +1,186 @@
+/*/////////////////////////////////////////////////////////////////////////////
 
-  .section {
-    background: rgba(255, 255, 255, 0.75);
-    width: 100%;
-    margin-top: 35px;
-    padding: 20px;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    display: inline-block;
-    border-radius: 4px;
-  }
+File Name: index.css
+Creator: Johnathan Estes
+Purpose: Style sheet in conjuction with index.php.
 
-  .section:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .animated {
-   background-image: url(/css/images/logo.png);
-   background-repeat: no-repeat;
-   background-position: left top;
-   -webkit-animation-duration: 4s;
-   animation-duration: 4s;
-   -webkit-animation-fill-mode: both;
-   animation-fill-mode: both;
+/////////////////////////////////////////////////////////////////////////////*/
+/*Adds the background color for the page*/
+body {
+
+  background-image: linear-gradient(
+  rgba(105, 105, 105, 0),
+  rgba(105, 105, 105, 0)
+  ),url(computer.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  background-color: #39393a;
 }
 
-@-webkit-keyframes fadeIn {
-   0% {opacity: 0;}
-   100% {opacity: 1;}
+/*Adjust the h1 properties.*/
+h1 {
+  margin-top: 200px;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Montserrat"; /* Imported from Google Fonts*/
+  font-weight: bold;
+  color: #ffeeff;
+	-webkit-text-stroke: 1px black;
 }
 
-@keyframes fadeIn {
-   0% {opacity: 0;}
-   100% {opacity: 1;}
+/*Adjust the properites of the CodeMan Logo.*/
+.logoimg {
+  margin: auto;
+  display: block;
+  position: relative;
+  top: 100px;
+  width: 900px;
+  height: auto;
 }
 
-.fadeIn {
-   -webkit-animation-name: fadeIn;
-   animation-name: fadeIn;
+/* Styles Section Head Fonts.*/
+.sectionhead {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: "Ubuntu"; /* Imported from Google Fonts*/
 }
 
-.left {
+/* Left aligns content section.*/
+.sectionleft {
+  display: inline-block;
   float: left;
+  background: #ebe7e7;
+  width: 50%;
+  height: 200px;
+  margin-top: 100px;
+  padding: 20px;
+  border-radius: 4px;
 }
 
-.right {
+/* Right aligns content section.*/
+.sectionright {
+  display: inline-block;
   float: right;
+  background: #ebe7e7;
+  width: 50%;
+  height: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 20px;
+  border-radius: 4px;
 }
 
-  .leftcol {
-    float: left;
-    width: 50%;
-    margin-top: 15px;
-  }
+/* Formats content text descriptions.*/
+.textdesc {
+  text-align: left;
+  font-size: 20px;
+  margin-left: 350px;
+  font-family: "Montserrat"; /* Imported from Google Fonts*/
+}
 
-  .rightcol {
-    float: left;
-    width: 50%;
-    margin-top: 15px;
-  }
+/* Formats button style and positioning.*/
+button{
+  color: #ffeeff;
+  background-color: #934141;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 300px;
+  height: 70px;
+  margin-top: 15px;
+  margin-right: 50px;
+  font-size: 24px;
+  transition: .5s;
+}
 
-  .header {
-    padding: 5px;
-    font-size: 60px;
-    margin-top: 50px;
-    margin-right: 0;
-    text-align: left;
-    font-weight: bold;
-    color: #ffffff;
-   }
+/* Displays hover effect for buttons.*/
+button:hover {
+  background-color: #39393A;
+}
 
-   .maintext {
-     padding: 5px;
-     font-size: 30px;
-     margin-top: 25px;
-     margin-right: 0;
-     text-align: left;
-     font-weight: bold;
-     color: #ffffff;
-   }
-
-   .image {
-     width: 50%;
-     height: auto;
-     margin-top: 100px;
-     margin-left: 100px;
-   }
-
-   .row:after {
-     content: "";
-     display: table;
-     clear: both;
-   }
-
-
-   button{
-     color: #eeeeee;
-     background-color: #468189;
-     padding: 10px 10px;
-     border: none;
-     border-radius: 3px;
-     cursor: pointer;
-     width: 300px;
-     height: 70px;
-     margin-top: 15px;
-     margin-right: 50px;
-     font-size: 24px;
-   }
-
-   button:hover {
-     background-color: #666666;
-   }
-
-
-  body {
-    background-color: #82AEB1;
-  }
-
-
-  @media screen and (max-width: 800px) {
-    .section{
-      width: 70%;
-      height: auto;
-    }
-  }
-
+/*Responsive Web Design for Mobile Devices.*/
   @media screen and (max-width: 900px) {
-    button, input,[type=submit]{
-      width: 90%;
-      height: auto;
-      font-size:20px;
-    }
-  }
 
-  @media screen and (max-width: 1200px) {
-    .header{
-      font-size: 40px;
-      height: auto;
+    /* Adjusts background positioning.*/
+    body {
+      background: url("computer.jpg");
+      background-repeat: no-repeat;
+      background-position: top; /* Center the image */
+      width: auto;
+      height: 500px;
+      background-color: #39393a;
     }
-  }
 
-  @media screen and (max-width: 1000px) {
-    .maintext{
-      font-size: 20px;
-      height: auto;
-    }
-  }
-
-  @media screen and (max-width: 1325px) {
-    .placeholder, img{
+    /*Adjust the Logo when Screen width is less than 1000 pixels.*/
+    .logoimg {
+      margin: auto;
+      display: block;
+      position: relative;
+      top: 100px;
+      margin-bottom: 70px;
       width: 100%;
       height: auto;
     }
+
+    /*Adjust h1 properies when the screen is less than 900 pixels.*/
+    h1 {
+      margin-top: 400px;
+      text-align: center;
+      font-size: 3.5vw;
+      font-family: "Montserrat"; /* Imported from Google Fonts*/
+      font-weight: bold;
+      color: #ffeeff;
+      -webkit-text-stroke: 0px;
+    }
+
+    /*Adjust sections for mobile devices.*/
+    .sectionright {
+      float: left;
+      background: #ebe7e7;
+      width: auto;
+      height: auto;
+      margin: 25px auto;
+      padding: 20px;
+      border-radius: 4px;
+    }
+
+    .sectionleft {
+      float: left;
+      background: #ebe7e7;
+      width: auto;
+      height: auto;
+      margin: 25px auto;
+      padding: 20px;
+      border-radius: 4px;
+    }
+
+    /*Adjust section head for mobile devices.*/
+    .sectionhead {
+      display: block;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    /*Adjust descriptions for mobile devices.*/
+    .textdesc {
+      text-align: left;
+      display: block;
+      margin: 10px auto;
+      padding: 5px;
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+  /*Adjust button for mobile devices.*/
+  button {
+    display: inline-block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto
+    bottom: 0;
+    width: 100%;
+    height: 100px;
   }
+}

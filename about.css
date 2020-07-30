@@ -1,120 +1,168 @@
-
-
-/*/////////////////////////////////////////////////////////////////////////////
-
-File Name: about.css
-Creator: Johnathan Estes
-Purpose: Creates the style sheet for the aboutMe.php page.
-
-/////////////////////////////////////////////////////////////////////////////*/
-
-
-/*Creates the Header Tab for the Page*/
-
-.header {
-	position: absolute;
-	width: 25%;
-	top: 100px;
-	margin-left: 50px;
-	padding: 0px;
-	font-size: 28px;
-	text-align: center;
-	color: #ffffff;
-	background: rgba(0, 0, 0, 0.5);
-}
-
-
-/*Creates a left column.*/
-
-.leftcol {
-	float: left;
-	width: 60%;
-	margin-top: 10px;
-}
-
-
-/*Creates a right column.*/
-
-.rightcol {
-	float: right;
-	width: 30%;
-	margin-top: 10px;
-	margin-left: 50px;
-}
-
-
-/*Creates a background for a page section.*/
-
-.section {
-	background: rgba(255, 255, 255, 0.75);
-	margin-top: 125px;
-	margin-left: 50px;
-	padding: 10px;
-	width: 90%;
-}
-
-
-/*Creates a placeholder image background and border.*/
-
-.placeholder {
-	background: #444444;
-	padding: 5px;
-	height: 550px;
-	width: 450px;
-	margin-top: 30px;
-}
-
-
-/*Fixes an issue with creating breaks after the section border.*/
-
-.section:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-
-/*Adjust the properties for images on the page.*/
-
-img {
-	width: 100%;
-	height: 100%;
-}
-
-
 /*Adds the background color for the page*/
-
 body {
-	background-color: #82AEB1;
+	background-color: #39393a;
 }
 
-
-/*Adjusts the h1 tag properties*/
-
-h1 {
-	font-size: 48px;
+/*Formats the Header for the page*/
+.abouthead {
+	margin-top: 150px;
+	margin-left: 60px;
+	font-size: 40px;
+	color: #ffffff;
+	font-family: "Ubuntu"; /* Imported from Google Fonts*/
+	font-weight: bold;
 }
 
+/*Formats the section area. */
+.section {
+	float: left;
+	width: 50%;
+	background: #444444;
+	margin-top: 50px;
+	margin-left: 50px;
+	padding: 10px 10px;
+}
 
-/*Adjusts the p tag properties*/
+.profile {
+	float: right;
+	width: 50%;
+	padding: 10px 10px;
+}
 
+.myimg {
+	display: block;
+	margin-top: 104px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 500px;
+	height: auto;
+}
+
+.section2 {
+	width: 50%;
+	background: #444444;
+	margin-top: 50px;
+	margin-left: 50px;
+	padding: 10px 10px;
+}
+/*Adjust main page content. */
 p {
-	font-size: 16px;
-	line-height: 30px
+	font-size:19px;
+	font-family: "Montserrat"; /* Imported from Google Fonts*/
+	line-height: 40px;
+	color: #ffffff
 }
 
+button {
+	cursor: pointer;
+	float: left;
+	width: 100%;
+	color: #ffeeff;
+	background-color: #934141;
+	padding: 10px 10px;
+	border: none;
+	border-radius: 0px;
+	margin-top: 15px;
+	font-size: 18px;
+	transition: .3s;
+}
 
-/*Adds property to adjust webpage items as the screensize changes*/
+/* Displays hover effect for buttons.*/
+button:hover {
+  background-color: #39393A;
+}
 
-@media screen and (max-width: 1700px) {
-	.leftcol,
-	.rightcol,
-	.section,
-	input[type=submit],
-	.placeholder,
-	img {
-		width: 75%;
-		height: auto;
-		margin-top: 0;
+.column {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: auto;
+	margin-right: auto;
+	top: 0;
+}
+
+.img2 {
+	width:268px;
+	height: 110px;
+	top: -10px;
+}
+
+/*Responsive Web Design for Mobile Devices.*/
+@media screen and (max-width: 1015px) {
+
+	.abouthead {
+		margin-top: 150px;
+		text-align: left;
+		font-size: 5vw;
+		color: #ffffff;
+		font-family: "Ubuntu"; /* Imported from Google Fonts*/
+		font-weight: bold;
 	}
+
+	.profile {
+		display: block;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 10px 10px;
+	}
+
+	/*Formats the section area. */
+	.section {
+		width: 100%;
+		width: auto;
+		height: auto;
+		margin: 25px auto;
+		padding: 20px;
+	}
+
+	.section2 {
+		width: 100%;
+		width: auto;
+		height: auto;
+		margin: 25px auto;
+		padding: 20px;
+	}
+
+	p {
+		font-size:16px;
+		font-family: "Montserrat"; /* Imported from Google Fonts*/
+		line-height: 40px;
+		color: #ffffff
+	}
+
+	button {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto
+    bottom: 0;
+    width: 100%;
+    height: auto;
+  }
+
+	.column {
+		display: inline-block;
+		margin-left: auto;
+		margin-right: auto;
+		top: 0;
+	}
+
+	.img2 {
+		width:182px;
+		height: 75px;
+	}
+
+	.profile {
+		display: block;
+		width: 100%;
+		margin-top: 50px;
+		padding: 10px 10px;
+	}
+
+	.myimg {
+		display: block;
+		width: 50%;
+		height: auto;
+		margin-right: auto;
+	}
+
 }

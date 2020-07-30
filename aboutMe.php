@@ -1,79 +1,87 @@
-<!--
-
-File Name: aboutMe.php
-Creator: Johnathan Estes
-Purpose: Displays information about the website owner.
-
--->
-
-
 <html>
-    <title>
-        Codemans Hub
-    </title>
-    <head>
-        <!-- Imports the about.css stylesheet. -->
-        <link rel="stylesheet" type="text/css" href="about.css">
-    </head>
-    <body>
-        <!-- Include the navigation bar from nav.php.-->
-        <?php
-            include 'nav.php';
-        ?>
+<title>
+  CodeMans Hub
+</title>
+<head>
+  <link rel="stylesheet" type="text/css" href="about.css">
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <?php
+    include 'nav.php'; //Include the navigation bar from nav.php.
+  ?>
+</head>
 
+<!--Main Page Conents-->
+<body>
 
-        <!-- Creates the website header. -->
+<div class="abouthead">
+  <h1>Johnathan Estes</h1>
+</div>
 
-        <br><br>
-        <div class="section">
-            <div class="leftcol">
-                <h1>Johnathan Estes</h1>
-                <p> My name is Johnathan. I recently graduate college at Winthrop University
-                    in Rock Hill, South Carolina. I have recieved my bachelor's degree in
-                    Computer Science and a Minor in Computer Information Systems. I am seeking
-                    a career in Software Development or Web development utilizing a variety of
-                    front and back-end technologies that I have learned inside and outside of college.
-                </p>
-                <p> Part of my professional experience within the technology field involved working
-                    on my college campus in the Information Technology department dubbed User
-                    Support Services, which I worked from September 2018 to May 2020.
-                    The job consisted of assisting students and faculty with hardware
-                    and software support. I was able to get hands on and learn a small amount of
-                    shell and bash scripting to assist with support issues. I also oversaw a
-                    project to document every single computer owned by Winthrop in order for the
-                    department to make a plan to convert all Windows 7 users to Windows 10.
-                </p>
-                <p> My programming knowledge started in High School when I was first introduced
-                    to HTML and CSS and learning how to use JavaScript to create web pages. In College,
-                    I started with C++, learning all of the data structures needed for any major
-                    programming language. I learned a little bit of assembly language using Mars and
-                    a Java interface. In addition, I also picked up C#, PHP, WebGL using Javascript,
-                    and databasing using MySQL and MongoDB.
-                </p>
-                <p>I also learned how to use frameworks. I used Node.Js and React to design an
-                    auction witha  team of people for All Things Possible. Also, I was able to pick up
-                    and learn how to code in Java after College. I created this website to show off
-                    my knowledge in programming using PHP, HTML, and CSS. I hope to obtain my first job as a
-                    Junior Software Developer.
-                </p>
-                <h2>Thank you for taking the time to read about me. If you have any questions, please
-                    use the Contact section to send me an email. You can also reach me using
-                    my media links below. Thank you so much!
-                </h2>
+<div class="section">
+<p>My name is Johnathan Estes. I have recently graduated from Winthrop University
+  located in Rock Hill, South Carolina, with a Bacehlor's Degree in Computer science.
+  Currently, I am seeking a career withing Software and Web Development utilizing
+  front-end and back-end languages and technologies I have learned throughout my career.
+</p>
 
-            <a href="/Resume_CV.Jae.docx" download>View my Resume Here!</a>
-            </div>
-            <div class="rightcol">
-                <div class = "placeholder">
-                    <img src="myself.jpeg">
-                </div>
-            </div>
-            <div class="leftcol">
-                <a href="https://www.linkedin.com/in/johnathan-estes-260341149/" >
-                <img src="linkedin.png" style="width:100px; height:100px">
-                </a>
-            </div>
-        </div>
-        <br>
-    </body>
+<p>My journey began when I was only four years old. I remember how incredible
+  Windows 98 appeared, and back then, I never understoof how much went
+  into developing the Operating System or the hardware to make it run. I was always
+  tech savvy growing up; I was normally the individual others would seek to get
+  technical help with software and hardware. When I entered High School, I started
+  with Web Development courses using HTML, CSS, and Adobe programs such as Photoshop
+  and Dreamweaver. Once I entered college, I decided to fully become a Software Developer.</p>
+
+  <p>My college career consisted of taking a variety of classes that would allow me
+  to get my feet wet ina  variety of different architectures and designs. I started
+  out learning the basics of C++, followed by Object Oriented Programming. Next,
+  I was taught how to apply my knowledge to develop high-level data structures,
+  including Trees, Hash Tables, and Maps. In addition, I also delved into different
+  programming languages including WebGL using JavaScript, C#, PHP, and database
+  structures using MySQL and MongoDB.</p>
+
+  <p>My Capstone Project involved developing an application using any structure
+  we chose, and my team decided to use Javascript using Node.JS, React.Js, and
+  Google Firebase using a NoSQL database. It was a struggle at first since I was
+  nervous using frameworks I never used before. But as I continued, I learned
+  the inner workings and was able to deliver my portions with ease. It taught me
+  how to adapt to enviroments you are not familiar with. It was what got me into
+  learning Java, which I was able to pick up relatively quickly after college,
+  becomming more fluent with it day by day.</p>
+
+  <p>I am proud of the journey I have been on, and I hope to continue growing in
+    the years to come. I want to learn as much as I can, and become exposed to a
+    variety of new structures, new ways to do things. I look forward to the journey.
+  </p>
+  </div>
+
+  <div class="profpic">
+    <img src="myself.jpeg" class="myimg">
+  </div>
+
+<div class="section2">
+<button class="btn"onclick="window.open('Resume_CV.Jae.docx')">
+  <i class="fa fa-download"></i> Download CV/Resume</button>
+<br><br><br><br><br>
+
+<div class ="column">
+<a href="https://www.linkedin.com/in/johnathan-estes-260341149/" target="_blank">
+<img src="linkedin.png" style="width: 128px; height: 128px"></a>
+</div>
+
+<div class ="column">
+<div class="img2">
+<a href="https://github.com/jestes0?tab=repositories" target="_blank">
+<img src="GitHub_Logo_White.png" class="img2">
+</a>
+</div>
+</div>
+</div>
+<br><br>
+</body>
 </html>
