@@ -1,132 +1,171 @@
 /*/////////////////////////////////////////////////////////////////////////////
-
-File Name: devformat.css
+*File Name: devformat.css*
 Creator: Johnathan Estes
 Purpose: Creates the style sheet for the devBlog.php page.
-
 /////////////////////////////////////////////////////////////////////////////*/
 
 /*Adds the background color for the page*/
-body {
-	background-color: #39393a;
+ body {
+     background-color: #39393a;
 }
-
 /*Formats the Header for the page*/
-.abouthead {
-	margin-top: 150px;
-	font-size: 40px;
-	color: #ffffff;
-	font-family: "Ubuntu"; /* Imported from Google Fonts*/
-	font-weight: bold;
-  text-align: center;
+ .abouthead {
+     margin-top: 150px;
+     font-size: 40px;
+     color: #ffffff;
+     font-family: "Ubuntu";
+    /* Imported from Google Fonts*/
+     font-weight: bold;
+     text-align: center;
 }
-
-/*Creates a row of content*/
-.row {
-	display: flex;
-	justify-content: center;
-  width: 100%;
+/*Creates a row of objects.*/
+ .row {
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     margin: 0 auto;
 }
-
 /*Creates spacing after row.*/
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+ .row:after {
+     content: "";
+     display: table;
+     clear: both;
 }
-
+/*Creates a left aligned column.*/
+ .leftcol {
+     float: left;
+     width: 65%;
+     margin: 25px auto 25px auto;
+}
 /*Creates a left aligned section.*/
-.leftsection {
-  float: left;
-	background: #444444;
-	width: 90%;
-	margin: 25px auto;
-	padding: 20px 20px;
+ .leftsection {
+     width: auto;
+     background-color: #444444;
+     margin-bottom: 50px;
+     padding: 20px 20px;
 }
-
+/*Creates a right aligned column.*/
+ .rightcol {
+     float: left;
+     background: #444444;
+     width: 25%;
+     margin: 25px auto 25px auto;
+     padding: 20px 20px;
+}
 /*Insert a placeholder where images are placed.*/
-.placeholder {
-	background: #aaaaaa;
-	padding: 20px;
-	height: 100px;
-	width: auto;
+ .placeholder {
+     background: #aaaaaa;
+     padding: 20px;
+     height: 100px;
+     width: auto;
 }
-
 /*Styles h2 content.*/
-h2 {
-  font-size: 24px;
-	line-height: 30px;
-  text-align: justify;
-  color: #ffffff;
-  font-family: "Ubuntu"; /* Imported from Google Fonts*/
+ h2 {
+     font-size: 24px;
+     line-height: 30px;
+     text-align: justify;
+     color: #ffffff;
+     font-family: "Ubuntu";
+    /* Imported from Google Fonts*/
 }
-
-h6 {
-	font-size: 18px;
-	text-align: justify;
-	color: #ffffff;
-	font-family: "Montserrat"; /* Imported from Google Fonts*/
-	margin-bottom: 50px;
+/*Styles h2 content.*/
+ h6 {
+     font-size: 18px;
+     text-align: justify;
+     color: #ffffff;
+     font-family: "Montserrat";
+    /* Imported from Google Fonts*/
+     margin-bottom: 50px;
 }
-
-p {
-	font-size: 18px;
-	line-height: 30px;
-	text-align: justify;
-	color: #ffffff;
-	font-family: "Montserrat"; /* Imported from Google Fonts*/
+/*Styles p content.*/
+ p {
+     font-size: 18px;
+     line-height: 30px;
+     text-align: justify;
+     color: #ffffff;
+     font-family: "Montserrat";
+    /* Imported from Google Fonts*/
 }
-
-li {
-	font-size: 16px;
-	line-height: 30px;
-	text-align: justify;
-	color: #ffffff;
-	font-family: "Montserrat"; /* Imported from Google Fonts*/
+/*Styles h2 content.*/
+ .listitems {
+     font-size: 16px;
+     line-height: 30px;
+     color: #ffffff;
+     font-family: "Montserrat";
+    /* Imported from Google Fonts*/
 }
-
-@media screen and (max-width: 1015px) {
-	/* Readjusts header font.*/
-	.abouthead {
-		text-align: center;
-		font-size: 3vw;
-	}
-
-	h2 {
-	  font-size: 4vw;
-		line-height: 30px;
-	  text-align: justify;
-	  color: #ffffff;
-	  font-family: "Ubuntu"; /* Imported from Google Fonts*/
-	}
-
-	h6 {
-	  font-size: 2vw;
-		line-height: 30px;
-	  text-align: justify;
-	  color: #ffffff;
-	  font-family: "Montserrat"; /* Imported from Google Fonts*/
-		margin-bottom: 50px;
-	}
-
-	p {
-	  font-size: 1.5vw;
-		line-height: 30px;
-	  text-align: justify;
-	  color: #ffffff;
-	  font-family: "Montserrat"; /* Imported from Google Fonts*/
-	}
-
-	/* Readjusts right section organization.*/
-	.rightsection {
-		display: block;
-		width: auto;
-		float: auto;
-		background: #444444;
-		height: auto;
-		margin: 0 auto 0 auto;
-	}
-
-
-
+/*Styles link content.*/
+ a {
+     font-size: 20px;
+     line-height: 30px;
+     color: #ffffff;
+     font-family: "Montserrat";
+    /* Imported from Google Fonts*/
+}
+/*Adds Hover effect to links.*/
+ a:hover {
+     color: #aaaaaa;
+}
+ @media screen and (max-width: 1015px) {
+    /* Readjusts header font.*/
+     .abouthead {
+         text-align: center;
+         font-size: 3vw;
+    }
+    /*Creates a row of objects.*/
+     .row {
+         display: block;
+         width: 100%;
+         margin: 0 auto;
+    }
+    /*Adjusts h2 for mobile devices.*/
+     h2 {
+         font-size: 4vw;
+         line-height: 30px;
+         text-align: justify;
+         color: #ffffff;
+         font-family: "Ubuntu";
+        /* Imported from Google Fonts*/
+    }
+    /*Adjusts h6 for mobile devices.*/
+     h6 {
+         font-size: 2vw;
+         line-height: 30px;
+         text-align: justify;
+         color: #ffffff;
+         font-family: "Montserrat";
+        /* Imported from Google Fonts*/
+         margin-bottom: 50px;
+    }
+    /*Adjusts p for mobile devices.*/
+     p {
+         font-size: 1.5vw;
+         line-height: 30px;
+         text-align: justify;
+         color: #ffffff;
+         font-family: "Montserrat";
+        /* Imported from Google Fonts*/
+    }
+    /* Readjusts left column organization.*/
+     .leftcol {
+         display: block;
+         width: 100%;
+         float: none;
+         height: auto;
+         padding-bottom: 20px;
+    }
+    /* Readjusts left section organization.*/
+     .leftsection {
+         width: auto;
+         background-color: #444444;
+         margin-bottom: 50px;
+    }
+    /* Readjusts right column organization.*/
+     .rightcol {
+         float: none;
+         width: auto;
+         height: auto;
+         padding-bottom: 20px;
+         margin-bottom: 50px;
+    }
 }

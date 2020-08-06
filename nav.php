@@ -20,7 +20,7 @@
     <a href="aboutMe.php">About Me</a>
   </li>
   <li class="liitem">
-    <a href="devBlog.php">Dev Blog</a>
+    <a href="devblogAug2020.php">Dev Blog</a>
   </li>
   <li class="liitem">
 <a href="showcase.php">Portfolio</a>

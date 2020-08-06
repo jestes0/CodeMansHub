@@ -11,7 +11,7 @@
 
 <!-- Call navbar for page.-->
   <?php
-    include 'nav.php'; 
+    include 'nav.php';
   ?>
 </head>
 
@@ -20,11 +20,14 @@
 
 <!--Load Navbar Components.-->
 <!-- Insert Logo onto the Index Page -->
-<img src="CodeMan_Logo.png" alt="Codeman_Logo" class="logoimg">
+<img src="/images/CodemanLogo.png" alt="Codeman_Logo" class="logoimg">
 
 <h1>"The home of a man who loves to code."</h1>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+<div class="desktopbreak">
+</div>
+
+<div class="row">
 <div class="sectionright">
   <div class="sectionhead">
   More About Me
@@ -34,7 +37,6 @@
     interested with Software Development and the journey to get where I am today.
 </div>
   <button onclick="location.href='aboutMe.php'" type="button">Read More</button>
-
 </div>
 
 <div class="sectionleft">
@@ -45,9 +47,7 @@
       Check out my online Portfolio, which details some of my most notable
       projects I have worked on in college and beyond.
   </div>
-    <div class = "buttonhold">
     <button onclick="location.href='showcase.php'" type="button">View Portfolio</button>
-  </div>
 </div>
 
 <div class="sectionright">
@@ -59,6 +59,7 @@
       to reach me via Email.
   </div>
     <button onclick="location.href='contact.php'" type="button">Contact!</button>
+</div>
 </div>
 
 <br>

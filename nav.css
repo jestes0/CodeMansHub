@@ -41,6 +41,7 @@
   line-height: 18px;
   color: #eeeeee;
   font-size: 18px;
+  text-shadow: 1.4px 1.4px #000000;
   font-family: "Ubuntu";
   font-weight: bold;
   padding: 15px 35px;
@@ -51,7 +52,8 @@
 }
 
 .ulitem .liitem a:hover {
-  color: #161d1d;
+  color: #222222;
+  text-shadow: 0px 0px #dddddd;
   background-color: #aba4a4;
   transition: .4s;
 }
@@ -109,7 +111,7 @@ img {
   }
 
   .ulitem .liitem a:hover {
-    color: #161d1d;
+    color: #aaaaaa;
     background: none;
     transition: .4s;
   }
