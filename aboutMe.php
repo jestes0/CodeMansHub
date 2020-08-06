@@ -1,7 +1,19 @@
+<!--
+
+File Name: *aboutMe.php*
+Creator: Johnathan Estes
+Purpose: Displays an About Me page to give information about the owner.
+
+-->
+
 <html>
+
+<!-- Declares Webpage title in Browser --->
 <title>
-  CodeMans Hub
+About Me
 </title>
+
+<!-- Include stylesheet and Google fonts-->
 <head>
   <link rel="stylesheet" type="text/css" href="about.css">
   <link rel="stylesheet"
@@ -10,18 +22,22 @@
         href="https://fonts.googleapis.com/css?family=Ubuntu">
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <?php
-    include 'nav.php'; //Include the navigation bar from nav.php.
-  ?>
+        <!-- Include Navigation bar-->
+        <?php
+include 'nav.php';
+
+?>
 </head>
 
-<!--Main Page Conents-->
+<!-- Main Page Content -->
 <body>
 
+<!-- Create Body Header-->
 <div class="abouthead">
   <h1>Johnathan Estes</h1>
 </div>
 
+<!-- Create Section Content-->
 <div class="section">
 <p>My name is Johnathan Estes. I have recently graduated from Winthrop University
   located in Rock Hill, South Carolina, with a Bacehlor's Degree in Computer science.
@@ -61,24 +77,26 @@
   </div>
 
   <div class="profpic">
-    <img src="myself.jpeg" class="myimg">
+    <img src="/images/myself.jpg" class="myimg">
   </div>
 
-<!-- Resume and External Links-->
+<!-- Create Second Section Content for external links-->
 <div class="section2">
 <button class="btn"onclick="window.open('Resume_CV.Jae.docx')">
   <i class="fa fa-download"></i> Download CV/Resume</button>
 <br><br><br><br><br>
 
+<!-- Create LinkedIn redirect-->
 <div class ="column">
 <a href="https://www.linkedin.com/in/johnathan-estes-260341149/" target="_blank">
-<img src="linkedin.png" style="width: 128px; height: 128px"></a>
+<img src="/images/linkedin.png" style="width: 128px; height: 128px"></a>
 </div>
 
+<!-- Create GitHub redirect-->
 <div class ="column">
 <div class="img2">
 <a href="https://github.com/jestes0?tab=repositories" target="_blank">
-<img src="GitHub_Logo_White.png" class="img2">
+<img src="/images/GitHub_Logo_White.png" class="img2">
 </a>
 </div>
 </div>

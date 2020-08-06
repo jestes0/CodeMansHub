@@ -1,7 +1,17 @@
+<!--
+
+File Name: auctionhub.php
+Creator: Johnathan Estes
+Purpose: Displays information about the Auction Hub Project.
+
+-->
+
 <html>
 <title>
   Codemans Hub
 </title>
+
+<!-- Include stylesheet and Google fonts-->
 <head>
   <link rel="stylesheet" type="text/css" href="auctionhub.css">
   <link rel="stylesheet"
@@ -20,15 +30,20 @@
 
 <br><br>
 <div class="row">
+
   <div class="content">
+
+    <!-- Create Body Header-->
     <div class="abouthead">
       <h1>Auction Hub Application</h1>
     </div>
 
+    <!-- Create  Image Section-->
     <div class="leftsection">
       <img src = "auction_hub.PNG">
     </div>
 
+    <!-- Create  Content Section-->
     <div class="rightsection">
 
       <h2> Client: All things Possible</h2>
@@ -69,6 +84,8 @@
   </div>
 </div>
     <div class="row">
+
+      <!-- Creates Buttons for redirect and returning-->
       <div class="content">
       <div class = "buttonhold">
         <button onclick="location.href='showcase.php'" type="button">

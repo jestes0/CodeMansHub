@@ -1,0 +1,22 @@
+/*/////////////////////////////////////////////////////////////////////////////
+
+File Name: emailsent.css
+Creator: Johnathan Estes
+Purpose: Creates the style sheet for the emailsent.php page.
+
+/////////////////////////////////////////////////////////////////////////////*/
+/*Adds the background color for the page.*/
+body {
+  background-color: #39393a;
+}
+
+p {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 3vw;
+  font-family: "Montserrat"; /* Imported from Google Fonts*/
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 1px 1px #000000;
+}

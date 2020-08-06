@@ -1,5 +1,3 @@
-
-
 /*/////////////////////////////////////////////////////////////////////////////
 
 File Name: contact.css
@@ -7,129 +5,157 @@ Creator: Johnathan Estes
 Purpose: Creates the style sheet for the contact.php page.
 
 /////////////////////////////////////////////////////////////////////////////*/
-
-
-/*Creates the Header Tab for the Page*/
-
-.header {
-	padding: 5px;
-	font-size: 32px;
-	text-align: center;
-	color: #ffffff;
-	background: rgba(0, 0, 0, 0.5);
+/*Adds the background color for the page.*/
+body {
+	background-color: #39393a;
 }
-
-
+/*Creates the Header Tab for the Page*/
+.abouthead {
+  text-align: center;
+	margin-left: 25px;
+	font-size: 28px;
+	font-family: "Ubuntu"; /* Imported from Google Fonts*/
+	font-weight: bold;
+	color: #ffffff;
+}
 /*Creates a background for a page section.*/
-
-.section {
-	background: rgba(255, 255, 255, 0.75);
-	width: 100%;
+.content {
+  align-content: center;
+	background: #444444;
+	width: 50%;
+  height: auto;
 	margin-top: 125px;
+  margin-left: auto;
+  margin-right: auto;
 	padding: 30px;
 }
-
-
 /*Fixes an issue with row placement on a line.*/
-
 .row:after {
 	content: "";
 	display: table;
 	clear: both;
 }
 
-
 /*Specifies Formatiing for form contents.*/
-
 .form {
 	font-weight: bold;
 }
-
-
-/*Creates a column for labels.*/
-
-.labelcol {
-	float: left;
-	width: 20%;
-	margin-top: 15px;
-}
-
-
 /*Creates a column for input boxes.*/
-
 .inputcol {
 	float: left;
-	width: 60%;
+	width: 100%;
 	margin-top: 15px;
 }
-
-
-/*Adds the background color for the page.*/
-
-body {
-	background-color: #39393a;
-}
-
-
 .error {
 	margin-right: 30px;
 }
+.desktopbreak {
+  margin-bottom: 50px;
+}
 /*Specifies the styling for text areas and input boxes.*/
-
 input[type=text],
-select,
-textarea {
-	width: 100%;
+select {
+  float: right;
+	width: 60%;
 	padding: 16px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	resize: vertical;
+  margin-top: 20px;
+  margin-right: 90px;
 }
 
+textarea {
+  float: right;
+  width: 100%;
+  height: 200px;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  margin-top: 20px;
 
+}
 /*Creates Hover over effect for input boxes.*/
-
 input[type=text]:hover {
 	border-color: #111111;
 }
 
-
 /*Creates styling  effect for submit buttons.*/
-
 input[type=submit] {
-	color: #444444;
+	background-color: #934141;
+  color: #ffffff;
 	padding: 10px 10px;
 	border: none;
 	border-radius: 3px;
 	cursor: pointer;
-	float: center;
-	width: 16%;
+	width: 100%;
 	height: 70px;
 	font-size: 18px;
 	margin-top: 20px;
 }
-
-
 /*Creates hover over effect for submit buttons.*/
-
 input[type=submit]:hover {
-	background-color: #aaaaaa;
+	background-color: #734141;
 }
 
 label {
-	font-size: 16px;
+	font-size: 20px;
+  font-family: "Montserrat"; /* Imported from Google Fonts*/
 	margin-top: 30px;
 	margin-left: 5px;
+  margin-right: 20px;
+  color: #eeeeee;
 }
-/*Adds property to adjust webpage items as the screensize changes.*/
 
-@media screen and (max-width: 600px) {
-	input[type=submit],
-	{
-		width: 66%;
-		height: auto;
-		margin-top: 0;
-		font-size: 14px;
+.Message {
+  width: 50%;
+  height: 200px;
+}
 
+p {
+	text-align: center;
+	font-size: 4vh;
+	color: #ffffff;
+	font-family:'Montserrat';
+}
+
+@media screen and (max-width: 1015px) {
+
+/* Adjusts content section for mobile.*/
+  .content {
+		display: block;
+		margin-top: 100px;
+		width: auto;
+		padding: 20px 20px;
 	}
+
+  .inputcol {
+	   display: block;
+	   width: 100%;
+	   margin-top: 15px;
+  }
+
+  label {
+    display: block;
+	  font-size: 3vw;
+	  margin-top: 20px;
+	  margin-left: 5px;
+    margin-right: 10px;
+    color: #eeeeee;
+  }
+  /*Creates styling  effect for text boxes.*/
+  input[type=text] {
+    float: left;
+    width: 90%;
+  }
+  /*Creates styling  effect for submit buttons.*/
+  input[type=submit] {
+  	width: 100%;
+  }
+
+  textarea {
+    float: left;
+  }
+
 }

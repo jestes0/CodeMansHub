@@ -1,152 +1,135 @@
-/*/////////////////////////////////////////////////////////////////////////////
-
-File Name: showcase.css
-Creator: Johnathan Estes
-Purpose: Style sheet in conjuction with index.php.
-
-/////////////////////////////////////////////////////////////////////////////*/
-
+/*/
+//////////////////////////////////////////////////////////////////////////// File Name: showcase.css Creator: Johnathan Estes Purpose: Style sheet in conjuction with index.php. ////////////////////////////////////////////////////////////////////////////
+/*/
 /*Adds the background color for the page*/
-body {
-	background-color: #39393a;
+ body {
+     background-color: #39393a;
 }
-
 /*Formats the Header for the page*/
-.abouthead {
-	margin-top: 150px;
-	font-size: 40px;
-	color: #ffffff;
-	font-family: "Ubuntu"; /* Imported from Google Fonts*/
-	font-weight: bold;
-  text-align: center;
+ .abouthead {
+     margin-top: 150px;
+     font-size: 40px;
+     color: #ffffff;
+     font-family: "Ubuntu";
+    /* Imported from Google Fonts*/
+     font-weight: bold;
+     text-align: center;
 }
-
 /*Creates a row of objects.*/
-.row {
-  display: flex;
-	justify-content: center;
-  width: 100%;
-  margin: 0 auto;
+ .row {
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     margin: auto auto 50px 0;
 }
-
 /*Creates spacing after row.*/
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+ .row:after {
+     content: "";
+     display: table;
+     clear: both;
 }
-
 /*Creates a left aligned section.*/
-.leftsection {
-  float: left;
-	width: 40%;
-	background: #444444;
-	margin: 50px auto;
-	padding: 20px 20px;
-	border-radius: 4px;
+ .leftsection {
+     float: left;
+     width: 40%;
+     background: #444444;
+     margin: 50px auto;
+     padding: 20px 20px;
+     border-radius: 4px;
 }
-
 /*Creates a right aligned section.*/
-.rightsection {
-  float: left;
-  width: 40%;
-	background: #444444;
-  margin: 50px auto;
-	padding: 20px 20px;
-	border-radius: 4px;
+ .rightsection {
+     float: left;
+     width: 40%;
+     background: #444444;
+     margin: 50px auto;
+     padding: 20px 20px;
+     border-radius: 4px;
 }
-
 /*Modifies h2 propeties*/
-h2 {
-  font-size: 3vw;
-  text-align: center;
-  color: #ffffff;
-  font-family: "Ubuntu"; /* Imported from Google Fonts*/
+ h2 {
+     font-size: 3vw;
+     text-align: center;
+     color: #ffffff;
+     font-family: "Ubuntu";
+    /* Imported from Google Fonts*/
 }
-
 /*Modifies p propeties*/
-p {
-  font-size: 16px;
-  text-align: center;
-  color: #ffffff;
-  font-family: "Montserrat"; /* Imported from Google Fonts*/
+ p {
+     font-size: 16px;
+     text-align: center;
+     color: #ffffff;
+     font-family: "Montserrat";
+    /* Imported from Google Fonts*/
 }
-
 /*Modifies and centers image*/
-img {
-  display: block;
-  width: 90%;
-  height: auto;
-  margin: 0 auto;
+ img {
+     display: block;
+     width: 90%;
+     height: auto;
+     margin: 0 auto;
 }
-
 /*Adjusts button properties*/
-button {
-  cursor: pointer;
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-  color: #ffffff;
-	background-color: #934141;
-	padding: 25px 10px;
-	border: none;
-	border-radius: 0px;
-	margin-top: 15px;
-	font-size: 28px;
-  font-weight: bold;
-	transition: .3s;
+ button {
+     cursor: pointer;
+     width: 100%;
+     height: auto;
+     margin: 0 auto;
+     color: #ffffff;
+     background-color: #934141;
+     padding: 25px 10px;
+     border: none;
+     border-radius: 0px;
+     margin-top: 15px;
+     font-size: 28px;
+     font-weight: bold;
+     transition: .3s;
 }
-
 /* Displays hover effect for buttons.*/
-button:hover {
-  background-color: #734141;
+ button:hover {
+     background-color: #734141;
 }
-
-@media screen and (max-width: 1015px) {
-
-  /* Readjusts header font.*/
-  .abouthead {
-  	font-size: 5vw;
-  }
-
-  /* Readjusts h2 font.*/
-  h2 {
-    font-size: 7vw;
-    text-align: center;
-    color: #ffffff;
-    font-family: "Ubuntu"; /* Imported from Google Fonts*/
-  }
-
-  /* Readjusts row organization.*/
-  .row {
-		display: block;
-    margin: 50px auto;
-  }
-
-  /* Readjusts left section organization.*/
-  .leftsection {
-    width: auto;
-    background: #444444;
-    height: auto;
-    margin-top: 50px auto 0 auto;
-    padding: 5px;
-    border-radius: 4px;
-  }
-
-  /* Readjusts right section organization.*/
-  .rightsection {
-    width: auto;
-    float: left;
-    background: #444444;
-    height: auto;
-    margin: 50px auto 0 auto;
-    padding: 5px;
-    border-radius: 4px;
-  }
-
-  /* Readjusts button font.*/
-  button {
-  	font-size: 4vw;
-  }
-
+ @media screen and (max-width: 1015px) {
+    /* Readjusts header font.*/
+     .abouthead {
+         font-size: 5vw;
+    }
+    /* Readjusts h2 font.*/
+     h2 {
+         font-size: 7vw;
+         text-align: center;
+         color: #ffffff;
+         font-family: "Ubuntu";
+        /* Imported from Google Fonts*/
+    }
+    /* Readjusts row organization.*/
+     .row {
+         display: block;
+         margin: 50px auto;
+    }
+    /* Readjusts left section organization.*/
+     .leftsection {
+			 	display: block;
+				 width: auto;
+         background: #444444;
+         height: auto;
+         margin-top: 50px auto 0 auto;
+         padding: 0 5px 10px 5px;
+         border-radius: 8px;
+    }
+    /* Readjusts right section organization.*/
+     .rightsection {
+			 	display: block;
+				 width: auto;
+         float: left;
+         background: #444444;
+         height: auto;
+         margin: 50px auto 0 auto;
+         padding: 10px 5px;
+         border-radius: 8px;
+    }
+    /* Readjusts button font.*/
+     button {
+         font-size: 4vw;
+    }
 }

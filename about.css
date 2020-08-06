@@ -1,169 +1,150 @@
+/*/////////////////////////////////////////////////////////////////////////////
+*File Name: about.css*
+Creator: Johnathan Estes
+Purpose: Creates the style sheet for the aboutMe.php page.
+/////////////////////////////////////////////////////////////////////////////*/
+
 /*Adds the background color for the page*/
-body {
-	background-color: #39393a;
+ body {
+     background-color: #39393a;
 }
-
 /*Formats the Header for the page*/
-.abouthead {
-	margin-top: 150px;
-	margin-left: 60px;
-	font-size: 40px;
-	color: #ffffff;
-	font-family: "Ubuntu"; /* Imported from Google Fonts*/
-	font-weight: bold;
+ .abouthead {
+     margin-top: 150px;
+     margin-left: 60px;
+     font-size: 40px;
+     color: #ffffff;
+     font-family: "Ubuntu";
+    /* Imported from Google Fonts*/
+     font-weight: bold;
 }
-
 /*Formats the section area. */
-.section {
-	float: left;
-	width: 50%;
-	background: #444444;
-	margin-top: 50px;
-	margin-left: 50px;
-	padding: 10px 10px;
+ .section {
+     float: left;
+     width: 50%;
+     background: #444444;
+     margin-top: 50px;
+     margin-left: 50px;
+     padding: 10px 10px;
 }
-
-.profile {
-	float: right;
-	width: 50%;
-	padding: 10px 10px;
+/*Formats area around the profile image*/
+ .myimg {
+     display: block;
+     margin-top: 104px;
+     margin-right: auto;
+     margin-left: auto;
+     width: 500px;
+     height: auto;
 }
-
-.myimg {
-	display: block;
-	margin-top: 104px;
-	margin-right: auto;
-	margin-left: auto;
-	width: 500px;
-	height: auto;
-}
-
-.section2 {
-	width: 50%;
-	background: #444444;
-	margin-top: 50px;
-	margin-left: 50px;
-	padding: 10px 10px;
+/*Formats second are formatting*/
+ .section2 {
+     width: 50%;
+     background: #444444;
+     margin-top: 50px;
+     margin-left: 50px;
+     padding: 10px 10px;
 }
 /*Adjust main page content. */
-p {
-	font-size:19px;
-	font-family: "Montserrat"; /* Imported from Google Fonts*/
-	line-height: 40px;
-	color: #ffffff
+ p {
+     font-size:19px;
+     font-family: "Montserrat";
+    /* Imported from Google Fonts*/
+     line-height: 40px;
+     color: #ffffff
 }
-
-button {
-	cursor: pointer;
-	float: left;
-	width: 100%;
-	color: #ffeeff;
-	background-color: #934141;
-	padding: 10px 10px;
-	border: none;
-	border-radius: 0px;
-	margin-top: 15px;
-	font-size: 18px;
-	font-weight: bold;
-	transition: .3s;
+/*Formats button styling*/
+ button {
+     cursor: pointer;
+     float: left;
+     width: 100%;
+     color: #ffeeff;
+     background-color: #934141;
+     padding: 10px 10px;
+     border: none;
+     border-radius: 0px;
+     margin-top: 15px;
+     font-size: 18px;
+     font-weight: bold;
+     transition: .3s;
 }
-
 /* Displays hover effect for buttons.*/
-button:hover {
-  background-color: #39393A;
+ button:hover {
+   background-color: #734141;
 }
-
-.column {
-	display: inline-block;
-	vertical-align: middle;
-	margin-left: auto;
-	margin-right: auto;
-	top: 0;
+/* Formats Weboage for a column format.*/
+ .column {
+     display: inline-block;
+     vertical-align: middle;
+     margin-left: auto;
+     margin-right: auto;
+     top: 0;
 }
-
-.img2 {
-	width:268px;
-	height: 110px;
-	top: -10px;
+/* Formats Github image to stay inline with LinkedIn image*/
+ .img2 {
+     width:268px;
+     height: 110px;
+     top: -10px;
 }
-
 /*Responsive Web Design for Mobile Devices.*/
-@media screen and (max-width: 1015px) {
-
-	.abouthead {
-		margin-top: 150px;
-		text-align: left;
-		font-size: 5vw;
-		color: #ffffff;
-		font-family: "Ubuntu"; /* Imported from Google Fonts*/
-		font-weight: bold;
-	}
-
-	.profile {
-		display: block;
-		width: 90%;
-		margin-left: auto;
-		margin-right: auto;
-		padding: 10px 10px;
-	}
-
-	/*Formats the section area. */
-	.section {
-		width: 100%;
-		width: auto;
-		height: auto;
-		margin: 25px auto;
-		padding: 20px;
-	}
-
-	.section2 {
-		width: 100%;
-		width: auto;
-		height: auto;
-		margin: 25px auto;
-		padding: 20px;
-	}
-
-	p {
-		font-size:16px;
-		font-family: "Montserrat"; /* Imported from Google Fonts*/
-		line-height: 40px;
-		color: #ffffff
-	}
-
-	button {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto
-    bottom: 0;
-    width: 100%;
-    height: auto;
-  }
-
-	.column {
-		display: inline-block;
-		margin-left: auto;
-		margin-right: auto;
-		top: 0;
-	}
-
-	.img2 {
-		width:182px;
-		height: 75px;
-	}
-
-	.profile {
-		display: block;
-		width: 100%;
-		margin-top: 50px;
-		padding: 10px 10px;
-	}
-
-	.myimg {
-		display: block;
-		width: 50%;
-		height: auto;
-		margin-right: auto;
-	}
-
+ @media screen and (max-width: 1015px) {
+     .abouthead {
+         margin-top: 150px;
+         text-align: left;
+         font-size: 5vw;
+         color: #ffffff;
+         font-family: "Ubuntu";
+        /* Imported from Google Fonts*/
+         font-weight: bold;
+    }
+    /*Formats the section area for mobile. */
+     .section {
+         width: 100%;
+         width: auto;
+         height: auto;
+         margin: 25px auto;
+         padding: 20px;
+    }
+    /*Formats the section2 area for mobile. */
+     .section2 {
+         width: 100%;
+         width: auto;
+         height: auto;
+         margin: 25px auto;
+         padding: 20px;
+    }
+    /*Formats the p content for mobile. */
+     p {
+         font-size:16px;
+         font-family: "Montserrat";
+        /* Imported from Google Fonts*/
+         line-height: 40px;
+         color: #ffffff
+    }
+    /*Formats the button content for mobile. */
+     button {
+         position: relative;
+         margin-left: auto;
+         margin-right: auto bottom: 0;
+         width: 100%;
+         height: auto;
+    }
+    /*Formats the column content for mobile. */
+     .column {
+         display: inline-block;
+         margin-left: auto;
+         margin-right: auto;
+         top: 0;
+    }
+    /*Adjusts the GitHub image for mobile. */
+     .img2 {
+         width:182px;
+         height: 75px;
+    }
+    /*Adjusts the profile image for mobile. */
+     .myimg {
+         display: block;
+         width: 50%;
+         height: auto;
+         margin-right: auto;
+    }
 }

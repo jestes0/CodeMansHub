@@ -44,11 +44,11 @@
 
   <!-- Create right aligned object. -->
   <div class="rightsection">
-    <h2>Practice Code</h2>
+    <h2>CodeMan's Hub</h2>
     <img src = "codingproject.jpg">
-    <p>A compilation of Code I work on in my spare time.</p>
+    <p>Vioew what went into the creation of the website.</p>
     <div class = "buttonhold">
-      <button onclick="location.href='showcase.php'" type="button">
+      <button onclick="location.href='codeman.php'" type="button">
       Coming Very Soon!</button>
     </div>
   </div>
